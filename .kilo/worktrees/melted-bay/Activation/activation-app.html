@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trải nghiệm quy trình làm việc trên App Activation: đăng nhập, lịch làm việc, cửa hàng và báo cáo tại điểm bán.">
+    <title>Trải nghiệm App Activation — SPACAP SYSTEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="activation-app.css">
+    <link rel="stylesheet" href="activation-app-phone.css">
+    <link rel="stylesheet" href="activation-app-responsive.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <script src="activation-app-system-s.js" defer></script>
+    <script src="activation-app-header-colors.js" defer></script>
+    <script src="activation-app.js" defer></script>
+</head>
+
+<body>
+    <a class="ui-skip-link" href="#experience">Đến phần trải nghiệm</a>
+    <svg class="ui-icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <filter id="phone-image-clarity" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feConvolveMatrix order="3" kernelMatrix="0 -0.20 0 -0.20 1.80 -0.20 0 -0.20 0" divisor="1" preserveAlpha="true" edgeMode="duplicate"/>
+        <feComponentTransfer>
+            <feFuncR type="table" tableValues="0 0.22 0.52 0.79 1"/>
+            <feFuncG type="table" tableValues="0 0.22 0.52 0.79 1"/>
+            <feFuncB type="table" tableValues="0 0.22 0.52 0.79 1"/>
+        </feComponentTransfer>
+    </filter>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M3 21v-3a7 7 0 0 1 14 0v3zM19 7v6m-3-3h6"/></symbol>
+    <symbol id="i-login" viewBox="0 0 24 24"><path d="M13 4H5v16h8M10 12h12m-4-4 4 4-4 4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 14v3"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M10 21H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M6 2v5m10-5v5M2 9h18M6 13h2m-2 4h2m4-4h1"/><circle cx="17" cy="17" r="5"/><path d="M17 14v3l2 1"/></symbol>
+    <symbol id="i-app" viewBox="0 0 24 24"><path d="m7 5 11 0-4 14H3z"/><path d="m10 8 5 0-2 8H8z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M5 3h9l5 5v13H5zM14 3v6h5M9 13h6m-6 4h6"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9h18l-2-6H5zM4 9v12h16V9M9 21v-7h6v7M2 9c0 5 5 5 5 0 0 5 5 5 5 0 0 5 5 5 5 0 0 5 5 5 5 0"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L20 5"/></symbol>
+    <symbol id="i-result" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 15v-3m4 3V8m4 7v-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><path d="M14 3a6 6 0 0 0-5 9l-7 7v3h4v-3h3v-3l3-2a6 6 0 1 0 2-11Z"/><circle cx="16" cy="7" r="1"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 5h12M9 12h12M9 19h12M3 5h1M3 12h1M3 19h1"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v1"/></symbol>
+    <symbol id="i-inventory" viewBox="0 0 24 24"><g stroke="#b78035" fill="#ffda93"><path d="m7 3 5-2 5 2v7l-5 2-5-2zM2 13l5-2 5 2v7l-5 2-5-2zM12 13l5-2 5 2v7l-5 2-5-2z"/></g><path d="m7 3 5 2 5-2m-5 2v7M2 13l5 2 5-2m-5 2v7m5-9 5 2 5-2m-5 2v7" stroke="#b78035"/></symbol>
+    <symbol id="i-price" viewBox="0 0 24 24"><path d="M2 8h3l2 10h12l3-7H6" stroke="#ec5695"/><circle cx="9" cy="21" r="1" stroke="#ec5695"/><circle cx="18" cy="21" r="1" stroke="#ec5695"/><path d="M10 8V6m4 2V4m4 4V2M9 4l5-3h5m-3-1 3 1-1 3" stroke="#1599ec"/></symbol>
+    <symbol id="i-percent" viewBox="0 0 24 24"><path d="m5 20 14-16"/><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/></symbol>
+    <symbol id="i-competitor" viewBox="0 0 24 24"><path d="M14 2H5v20h15V8zM14 2v6h6"/><path d="M13 10a5 5 0 1 0 5 5h-5z" fill="#a3dcff"/><path d="M16 10v3h3a3 3 0 0 0-3-3Z" fill="#50ccba" stroke="#36ab9a"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v14H3z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6h6"/></symbol>
+    <symbol id="i-traffic" viewBox="0 0 24 24"><path d="M4 21v-5m7 5V12m7 9V8" stroke="#31bdf2" stroke-width="4"/><path d="m2 11 6-5 5 2 8-6m-5 0h5v5"/></symbol>
+    <symbol id="i-quick-test" viewBox="0 0 24 24"><path d="M8 4H5a2 2 0 0 0-2 2v15h18V6a2 2 0 0 0-2-2h-3"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m6 10 1 1 2-2m-3 6 1 1 2-2M12 10h5m-5 5h5"/></symbol>
+    <symbol id="i-store-report" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 17v-4m5 4V9m5 8V5"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 18 6-6 4 4 4-6 5 8"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M8 7V3h8v4M2 12c6 4 14 4 20 0M12 13v3"/></symbol>
+    <symbol id="i-attendance" viewBox="0 0 24 24"><path d="M9 22H3V4h4m8 0h4v5M6 10h5m-5 4h3"/><rect x="7" y="2" width="8" height="4" rx="1"/><circle cx="17" cy="17" r="5" fill="#fff" stroke="#ee6397"/><path d="M17 14v3l2 1" stroke="#ee6397"/></symbol>
+    <symbol id="i-program" viewBox="0 0 24 24"><path d="M18 8V4h-3M7 4H3v18h12M7 11h4m-4 5h2"/><rect x="7" y="2" width="8" height="4" rx="1" stroke="#8366e8"/><path d="m12 17 8-8 3 3-8 8-4 1z" fill="#8dcfff" stroke="#238de5"/></symbol>
+    <symbol id="i-sales" viewBox="0 0 24 24"><path d="M3 11v11h18V11" fill="#ffb7cf" stroke="#e8558c"/><rect x="2" y="7" width="20" height="5" rx="1" fill="#ff7aa6" stroke="#e8558c"/><path d="M12 7v15M12 7C3 8 4 0 8 2c2 1 3 3 4 5Zm0 0c9 1 8-7 4-5-2 1-3 3-4 5Z" stroke="#e9ab28"/></symbol>
+    <symbol id="i-breaktime" viewBox="0 0 24 24"><path d="M5 12 7 22h10l2-10" fill="#9edbff"/><path d="M4 9h16v3H4zM6 9V6h12v3M9 4c-2-2 2-2 0-4m6 4c-2-2 2-2 0-4"/></symbol>
+        <symbol id="i-sync" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.7-4L3 10m0 0V5m0 5h5M4 13a8 8 0 0 0 14.7 4L21 14m0 0v5m0-5h-5"/></symbol>
+    <symbol id="i-attendance-s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff0ed" stroke="none"/><g fill="none" stroke="#ff493d"><path d="M8 13v-1a4 4 0 0 1 8 0v2M6 12a6 6 0 0 1 12 0v2M10 13v3a6 6 0 0 1-1 3M14 13v3a9 9 0 0 1-.7 3.5M18 17a12 12 0 0 0 1-5M5 16a10 10 0 0 0 1-4"/><path d="M11 20a9 9 0 0 0 1-4v-4"/></g></symbol>
+    <symbol id="i-display-s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#e4f5ff" stroke="none"/><path d="M5 8h3l1.5-2h5L16 8h3v10H5z" fill="#28a9ee" stroke="#168fd1"/><circle cx="12" cy="13" r="3" fill="#fff" stroke="#168fd1"/></symbol>
+    <symbol id="i-inventory-s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#e6f8ee" stroke="none"/><g fill="none" stroke="#13a85a"><path d="M5 18h14M7 16V9h10v7M5 9h14M9 6h6v3M9 13h6M12 9v7"/></g></symbol>
+    <symbol id="i-leave-area" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff0ed" stroke="none"/><g fill="none" stroke="#ff493d"><circle cx="14.5" cy="5" r="1.7" fill="#ff493d"/><path d="m11 9 3-2 2 3 3 1M13 8l-2 5-4 2M11 13l3 2 2 4M9 14l-2 5M5 8l3 1 3-1"/></g></symbol>
+    <symbol id="i-gift-s" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#f5eaff" stroke="none"/><g fill="none" stroke="#9a43d3"><path d="M5 10h14v10H5zM4 7h16v4H4zM12 7v13M12 7C6 8 7 3 9 4c1.5.5 2.3 1.7 3 3Zm0 0c6 1 5-4 3-3-1.5.5-2.3 1.7-3 3Z"/></g></symbol>
+  </defs></svg>
+    <header class="site-header">
+        <a class="site-header-logo" href="activation.html">
+            <span class="site-logo-mark">S</span>
+            <span class="site-logo-text">SPACAP <b>SYSTEM</b></span>
+        </a>
+
+        <nav class="site-header-nav">
+            <a class="site-nav-link site-nav-link--active" href="activation.html">Activation</a>
+            <a class="site-nav-link" href="#">Field Force</a>
+            <a class="site-nav-link" href="#">Audit</a>
+            <a class="site-nav-link" href="#">Mer</a>
+            <a class="site-nav-link" href="#">Staffing</a>
+            <a class="site-nav-link" href="#">Census</a>
+        </nav>
+    </header>
+
+    <main class="app-page">
+        <div class="app-pattern" aria-hidden="true">
+            <div class="app-pattern-circles">
+                <i class="app-pattern-circle app-pattern-circle--blue"></i>
+                <i class="app-pattern-circle app-pattern-circle--cyan"></i>
+                <i class="app-pattern-circle app-pattern-circle--green"></i>
+                <i class="app-pattern-dot-square"></i>
+            </div>
+        </div>
+        <a class="app-back-link" href="activation-overview.html">← Chi tiết tính năng Activation</a>
+        <header class="ui-page-intro">
+            <p class="ui-section-label"><span>›</span> APP EXPERIENCE</p>
+            <h1><span class="app-headline-line">Trải nghiệm quy trình</span><span class="app-headline-line">làm việc <em>trên App</em></span></h1>
+            <p class="app-intro-copy">Khám phá cách nhân viên đăng nhập, nhận lịch, truy cập cửa hàng và hoàn thành các báo cáo <span>Activation</span> tại điểm bán.</p>
+        </header>
+        <nav class="app-system-switcher" aria-label="Chọn hệ thống trải nghiệm">
+            <button class="app-system-button state-active" type="button" data-system="a" aria-pressed="true">
+                <svg class="app-system-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+                <span>Hệ thống A</span>
+            </button>
+            <button class="app-system-button" type="button" data-system="s" aria-pressed="false">
+                <svg class="app-system-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"></ellipse><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path></svg>
+                <span>Hệ thống S</span>
+            </button>
+        </nav>
+        <section class="app-experience-layout" id="experience" data-system="a" aria-label="Trải nghiệm Hệ thống A">
+            <aside class="app-journey-panel app-panel">
+                <header class="app-journey-heading">
+                    <p class="ui-section-label">HÀNH TRÌNH</p>
+                    <div class="app-journey-title-row">
+                        <h2>Cấu trúc App</h2>
+                        <span class="app-journey-system-logo" id="journey-system-logo" aria-label="Hệ thống A">A</span>
+                    </div>
+                </header>
+                <nav id="journey-menu" aria-label="Các bước trải nghiệm"></nav>
+            </aside>
+            <section class="app-detail-panel app-panel" aria-labelledby="detail-title">
+                <div class="app-detail-heading"><span class="app-step-badge" id="step-badge">BƯỚC 01</span>
+                    <div class="app-detail-title-row"><span class="app-detail-title-icon" id="detail-title-icon" aria-hidden="true"></span>
+                        <h2 id="detail-title" tabindex="-1">Đăng nhập &amp; bảo mật tài khoản</h2>
+                    </div>
+                    <p id="detail-description"></p>
+                </div>
+                <div id="detail-body"></div>
+                <nav class="app-step-actions" aria-label="Chuyển bước"><button id="prev-step" class="app-button app-button--outline" type="button">← Quay lại</button><button id="next-step" class="app-button" type="button">Tiếp theo →</button></nav>
+            </section>
+            <section class="app-phone-scene" aria-label="Điện thoại trải nghiệm tương tác">
+                <div class="app-scene-decoration" aria-hidden="true"><i class="app-glass-tile app-tile-one"></i><i class="app-glass-tile app-tile-two"></i><i class="app-glass-tile app-tile-three"></i>
+                    <div class="app-scene-tree"><i></i><b></b><span></span></div>
+                </div>
+                <img class="app-phone-pedestal" src="assets/de.png" alt="" aria-hidden="true">
+                <div class="app-phone-viewer">
+                <button type="button" class="app-schedule-arrow" data-action="schedule-prev" aria-label="Xem ảnh lịch làm việc trước" aria-controls="phone-screen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+                <div class="app-phone">
+                    <div class="app-phone-notch" aria-hidden="true"><i></i></div>
+                    <div class="app-phone-screen" id="phone-screen"></div>
+                </div>
+                <button type="button" class="app-schedule-arrow" data-action="schedule-next" aria-label="Xem ảnh lịch làm việc tiếp theo" aria-controls="phone-screen" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+                </div>
+            </section>
+        </section>
+        <noscript><p>Vui lòng bật JavaScript để sử dụng menu và trải nghiệm các bước trên ứng dụng.</p></noscript>
+    </main>
+
+    <dialog id="app-modal" aria-labelledby="modal-title"><button class="app-modal-close" type="button" data-action="close-modal" aria-label="Đóng hộp thoại">×</button>
+        <h2 id="modal-title"></h2>
+        <div id="modal-body"></div>
+    </dialog>
+    <dialog id="phone-image-dialog" class="app-image-dialog" aria-labelledby="phone-image-title">
+        <header class="app-image-dialog-toolbar">
+            <h2 id="phone-image-title">Xem ảnh</h2>
+            <button type="button" class="app-image-size-toggle" aria-pressed="false" aria-controls="phone-image-scroll">Kích thước gốc</button>
+            <button type="button" class="app-image-close" aria-label="Đóng ảnh" autofocus>×</button>
+        </header>
+        <div id="phone-image-scroll" class="app-image-dialog-scroll"><img class="app-image-expanded" alt=""></div>
+    </dialog>
+    <div id="toast" class="app-toast" role="status" aria-live="polite"></div>
+
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <a class="site-footer-logo" href="#" aria-label="SPACAP SYSTEM - về đầu trang">
+                <span class="site-logo-mark" aria-hidden="true">S</span>
+                <span class="site-logo-text">SPACAP <b>SYSTEM</b></span>
+            </a>
+            <p class="site-footer-text">© 2026 SPACAP SYSTEM
+                <span class="site-footer-separator">•</span> Nền tảng quản lý hoạt động Activation
+            </p>
+            <nav class="site-footer-nav" aria-label="Điều hướng cuối trang">
+                <a href="activation.html#activation-map">Năng lực</a>
+                <a href="activation.html#role-analysis">Nhóm người dùng</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

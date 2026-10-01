@@ -1,0 +1,213 @@
+/* Header, footer và logo dùng chung cho các trang. Class site-*. */
+
+.site-header {
+  height: 76px;
+  padding: 0 clamp(24px, 4.5vw, 88px);
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  display: grid;
+  background: #193e75;
+  color: white;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.site-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: max-content;
+  color: white;
+  font-size: clamp(18px, 1.45vw, 27px);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.site-header-logo b { color: #4b90ff; }
+
+.site-logo-mark {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: #478afa;
+  border-radius: 12px;
+  color: white;
+  font-size: 28px;
+}
+
+.site-logo-text { color: white; }
+
+.site-header-nav {
+  grid-column: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 1.65vw, 32px);
+}
+
+.site-nav-link {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: clamp(13px, 1.05vw, 19px);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav-link:hover,
+    .site-nav-link:focus { opacity: 1; }
+
+.site-nav-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  height: 2px;
+  background: #74e4f8;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+.site-nav-link:hover,
+    .site-nav-link.site-nav-link--active { color: #74e4f8; }
+
+.site-nav-link.site-nav-link--active:after { transform: scaleX(1); }
+
+.site-footer {
+  position: relative;
+  z-index: 2;
+  padding: 26px 30px;
+  color: #e9f2ff;
+  background: #092f70;
+  border-top: 1px solid #4b86df55;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.site-footer-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  max-width: 1860px;
+  margin-inline: auto;
+}
+
+.site-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  justify-self: start;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .025em;
+  white-space: nowrap;
+}
+
+.site-footer-logo b { color: #2681ff; }
+
+footer .site-logo-text { font-size: 16px; }
+
+footer .site-logo-mark {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 18px;
+  background: #2563ef;
+  box-shadow: 0 0 0 2px #73a8ff22;
+}
+
+.site-footer-text {
+  margin: 0;
+  color: #d9e7ff;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.site-footer-text span { padding-inline: 8px; color: #8caada; }
+
+.site-footer-nav {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 4px;
+  padding: 4px;
+  background: #f0f5fc;
+  border: 1px solid #dbe8fb;
+  border-radius: 12px;
+}
+
+.site-footer-nav a {
+  padding: 7px 13px;
+  border-radius: 8px;
+  color: #435775;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s ease, color .2s ease;
+}
+
+.site-footer-nav a:last-child { color: #2462ef; background: #fff; }
+
+.site-footer-nav a:hover,
+    .site-footer-nav a:focus-visible { color: #124cd1; background: #dceaff; }
+
+@media (max-width: 1100px) {
+  .site-header { grid-template-columns: auto 1fr; gap: 26px; padding-inline: 24px; }
+
+  .site-header-nav { justify-content: flex-end; gap: 18px; }
+
+  .site-header-logo { font-size: 18px; gap: 9px; }
+
+  .site-logo-mark { width: 42px; height: 42px; font-size: 25px; }
+
+  .site-nav-link { font-size: 12px; }
+
+  .site-footer-content { grid-template-columns: 1fr auto; gap: 20px; }
+
+  .site-footer-text { grid-column: 1 / -1; grid-row: 2; }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    height: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8px;
+    padding: 12px 16px 0;
+  }
+
+  .site-header-logo { font-size: 20px; }
+
+  .site-logo-mark { width: 40px; height: 40px; font-size: 23px; }
+
+  .site-header-nav {
+    grid-column: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    min-height: 38px;
+  }
+
+  .site-nav-link { font-size: 10px; min-height: 38px; }
+
+  .site-nav-link:after { bottom: 4px; }
+
+  .site-footer { padding: 26px 18px; }
+
+  .site-footer-content { grid-template-columns: 1fr; gap: 18px; }
+
+  .site-footer-logo,
+        .site-footer-nav { justify-self: center; }
+
+  .site-footer-text { grid-row: 3; max-width: 300px; justify-self: center; }
+}
