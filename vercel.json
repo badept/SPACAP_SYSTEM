@@ -2,10 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "cleanUrls": false,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "/Activation/index.html"
+      "destination": "/Activation/",
+      "permanent": false
     }
   ]
 }
