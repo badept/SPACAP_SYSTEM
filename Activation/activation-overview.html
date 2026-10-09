@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Khám phá 7 nhóm tính năng Activation: thiết lập, thực thi, kiểm soát và tổng hợp kết quả cùng SPACAP SYSTEM.">
-    <title>Khám phá hệ thống Activation — SPACAP SYSTEM</title>
+    <meta name="description" content="Khám phá 7 nhóm tính năng Activation: thiết lập, thực thi, kiểm soát và tổng hợp kết quả cùng AcacyONE.">
+    <title>Khám phá hệ thống Activation — AcacyONE</title>
+    <script src="login.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Dancing+Script:wght@500;600;700&amp;display=swap" rel="stylesheet">
@@ -29,19 +30,25 @@
     </svg>
 
     <header class="site-header">
-        <a class="site-header-logo" href="activation.html">
-            <span class="site-logo-mark">S</span>
-            <span class="site-logo-text">SPACAP <b>SYSTEM</b></span>
+        <a class="site-header-logo site-header-logo--wordmark" href="index.html" aria-label="Acacy ONE - Trang chủ">
+            <span class="site-logo-mark">A</span>
+            <span class="site-logo-text site-wordmark"><span>Acacy&nbsp;</span><b>ONE<i aria-hidden="true"></i></b></span>
         </a>
 
-        <nav class="site-header-nav">
-            <a class="site-nav-link site-nav-link--active" href="activation.html">Activation</a>
+        <nav class="site-header-nav" aria-label="Điều hướng chính">
+            <a class="site-nav-link site-nav-link--active" href="index.html">Activation</a>
+            <a class="site-nav-link" href="../E-LEARNING_SYSTEM/index.html">E-LEARNING</a>
             <a class="site-nav-link" href="#">Field Force</a>
             <a class="site-nav-link" href="#">Audit</a>
             <a class="site-nav-link" href="#">Mer</a>
             <a class="site-nav-link" href="#">Staffing</a>
             <a class="site-nav-link" href="#">Census</a>
         </nav>
+
+        <button class="site-account-button" type="button" data-logout aria-label="Đăng xuất khỏi AcacyONE" title="Đăng xuất">
+            <span class="site-account-avatar">AC</span><span class="site-account-label">Acacy ID</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v-2H5V6h5V4Zm4.6 3.6L13.2 9l2 2H8v2h7.2l-2 2 1.4 1.4L19 12l-4.4-4.4Z"/></svg>
+        </button>
     </header>
 
     <main class="overview-main">
@@ -68,8 +75,9 @@
             </svg>
             <div class="overview-hero-copy">
                 <div class="ui-section-label"><i></i>KHÁM PHÁ HỆ THỐNG</div>
-                <h1 id="overview-title">Chi tiết từng nhóm<br>tính năng <span>Activation.</span></h1>
-                <p class="overview-hero-lead"><strong>SPACAP SYSTEM</strong> hỗ trợ xuyên suốt từ cấu hình dự án, vận hành ngoài thị trường, thu thập dữ liệu đến kiểm tra và tổng hợp kết quả minh bạch.</p>
+                <h1 id="overview-title">Chi tiết từng nhóm<br><span class="overview-title-second-line">tính năng <span>Activation.</span></span>
+                </h1>
+                <p class="overview-hero-lead"><strong>AcacyONE</strong> hỗ trợ xuyên suốt từ cấu hình dự án, vận hành ngoài thị trường, thu thập dữ liệu đến kiểm tra và tổng hợp kết quả minh bạch.</p>
                 <div class="overview-hero-actions">
                     <a class="overview-app-link" href="activation-app.html"><span class="overview-play-icon" aria-hidden="true">▶</span><span>Trải nghiệm App Activation</span><b aria-hidden="true">→</b></a>
                     <p class="overview-handwritten-note">Kết nối dữ liệu<br><strong>Mở rộng giá trị</strong></p>
@@ -80,19 +88,31 @@
                 <div class="overview-flow-stage" aria-live="polite">
                     <article class="overview-flow-stage-panel state-active" data-flow-panel="setup">
                         <img class="overview-flow-stage-art" src="assets/Thietlap.png" alt="" aria-hidden="true">
-                        <div class="overview-flow-stage-copy"><h3>Thiết lập</h3><p>Dữ liệu nền và KPI</p></div>
+                        <div class="overview-flow-stage-copy">
+                            <h3>Thiết lập</h3>
+                            <p>Dữ liệu nền và KPI</p>
+                        </div>
                     </article>
                     <article class="overview-flow-stage-panel" data-flow-panel="execute" hidden>
                         <img class="overview-flow-stage-art" src="assets/Thucthi.png" alt="" aria-hidden="true">
-                        <div class="overview-flow-stage-copy"><h3>Thực thi</h3><p>App hiện trường</p></div>
+                        <div class="overview-flow-stage-copy">
+                            <h3>Thực thi</h3>
+                            <p>App hiện trường</p>
+                        </div>
                     </article>
                     <article class="overview-flow-stage-panel" data-flow-panel="control" hidden>
                         <img class="overview-flow-stage-art" src="assets/Kiemsoat.png" alt="" aria-hidden="true">
-                        <div class="overview-flow-stage-copy"><h3>Kiểm soát</h3><p>GPS, ảnh &amp; lịch sử</p></div>
+                        <div class="overview-flow-stage-copy">
+                            <h3>Kiểm soát</h3>
+                            <p>GPS, ảnh &amp; lịch sử</p>
+                        </div>
                     </article>
                     <article class="overview-flow-stage-panel" data-flow-panel="result" hidden>
                         <img class="overview-flow-stage-art" src="assets/Ketqua.png" alt="" aria-hidden="true">
-                        <div class="overview-flow-stage-copy"><h3>Kết quả</h3><p>Báo cáo đầu ra</p></div>
+                        <div class="overview-flow-stage-copy">
+                            <h3>Kết quả</h3>
+                            <p>Báo cáo đầu ra</p>
+                        </div>
                     </article>
                 </div>
                 <div class="overview-flow-grid">
@@ -139,7 +159,7 @@
                     <header class="overview-feature-banner">
                         <div>
                             <h2>Activation – Giải pháp toàn diện cho doanh nghiệp</h2>
-                            <p>Từ thu thập dữ liệu đến báo cáo, SPACAP SYSTEM giúp tối ưu hiệu suất hoạt động ngoài thị trường.</p>
+                            <p>Từ thu thập dữ liệu đến báo cáo, AcacyONE giúp tối ưu hiệu suất hoạt động ngoài thị trường.</p>
                         </div>
                         <div class="overview-banner-art" aria-hidden="true"><span>S</span><i>✓</i><svg><use href="#art-result"/></svg></div>
                     </header>
@@ -325,7 +345,7 @@
         </section>
     </main>
 
-    
+
 
     <dialog class="overview-dialog overview-sampling-dialog" id="sampling-dialog" aria-labelledby="sampling-dialog-title">
         <button class="overview-dialog-close" type="button" data-close-dialog aria-label="Đóng cửa sổ">×</button>
@@ -361,16 +381,16 @@
     </dialog>
     <footer class="site-footer">
         <div class="site-footer-content">
-            <a class="site-footer-logo" href="#" aria-label="SPACAP SYSTEM - về đầu trang">
-                <span class="site-logo-mark" aria-hidden="true">S</span>
-                <span class="site-logo-text">SPACAP <b>SYSTEM</b></span>
+            <a class="site-footer-logo" href="#" aria-label="AcacyONE - về đầu trang">
+                <span class="site-logo-mark" aria-hidden="true">A</span>
+                <span class="site-logo-text">AcacyONE</span>
             </a>
-            <p class="site-footer-text">© 2026 SPACAP SYSTEM
+            <p class="site-footer-text">© 2026 AcacyONE
                 <span class="site-footer-separator">•</span> Nền tảng quản lý hoạt động Activation
             </p>
             <nav class="site-footer-nav" aria-label="Điều hướng cuối trang">
-                <a href="activation.html#activation-map">Năng lực</a>
-                <a href="activation.html#role-analysis">Nhóm người dùng</a>
+                <a href="index.html#activation-map">Năng lực</a>
+                <a href="index.html#role-analysis">Nhóm người dùng</a>
             </nav>
         </div>
     </footer>

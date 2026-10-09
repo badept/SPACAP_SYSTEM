@@ -1,0 +1,151 @@
+:root {
+  --navy-950: #00132f;
+  --navy-900: #001d49;
+  --blue-600: #0869e8;
+  --blue-500: #0788ff;
+  --cyan: #26d8ee;
+  --ink: #111a30;
+  --muted: #778198;
+  --surface: #f7f9fc;
+  --white: #fff;
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body { margin: 0; color: var(--ink); background: #e9edf2; font-family: "Be Vietnam Pro", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+
+.login-shell { min-height: 100vh; min-height: 100dvh; display: grid; grid-template-columns: minmax(520px, 1.58fr) minmax(410px, .86fr); overflow: hidden; background: var(--surface); }
+.login-story { min-height: 100vh; min-height: 100dvh; position: relative; display: flex; flex-direction: column; padding: clamp(26px, 3.3vw, 52px); overflow: hidden; color: #fff; isolation: isolate; background: radial-gradient(circle at 87% 80%, rgba(18, 104, 237, .82) 0, rgba(8, 73, 176, .42) 27%, transparent 51%), radial-gradient(circle at 45% 43%, rgba(3, 82, 176, .3) 0, transparent 42%), linear-gradient(132deg, #001631 0%, #00245b 48%, #064cb5 100%); }
+.login-story::before, .login-story::after { content: ""; position: absolute; z-index: -1; border: 1px solid rgba(94, 206, 255, .16); border-radius: 24px; transform: rotate(-8deg); box-shadow: inset 0 0 45px rgba(32, 142, 255, .05); }
+.login-story::before { width: 115px; height: 115px; left: 32px; top: 78px; }
+.login-story::after { width: 135px; height: 135px; right: 50px; bottom: 72px; transform: rotate(12deg); }
+
+.story-topbar { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.portal-brand { display: inline-flex; align-items: center; gap: 12px; font-size: clamp(10px, .9vw, 13px); font-weight: 600; letter-spacing: 1.25px; }
+.portal-mark { width: 36px; height: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 3px; padding: 8px; flex: none; color: #1389c8; border-radius: 10px; background: #fff; transform: rotate(45deg); box-shadow: 0 8px 24px rgba(0, 24, 66, .22); }
+.portal-mark i { border-radius: 50%; background: currentColor; }
+.edition-badge { display: inline-flex; align-items: center; gap: 7px; padding: 6px 10px; color: #d7e9ff; border: 1px solid rgba(165, 205, 255, .24); border-radius: 999px; background: rgba(58, 132, 224, .16); font-size: 8px; white-space: nowrap; }
+.edition-badge i { width: 5px; height: 5px; border-radius: 50%; background: #25e0d4; box-shadow: 0 0 10px #25e0d4; }
+
+.story-content { width: min(820px, 94%); margin: auto; position: relative; }
+.story-wordmark { width: max-content; max-width: 100%; margin-inline: auto; position: relative; padding: 34px 62px 32px; isolation: isolate; }
+.story-wordmark::before { content: ""; position: absolute; z-index: -1; width: 78%; height: 145%; left: 50%; top: 56%; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(ellipse, rgba(20, 114, 230, .62) 0%, rgba(13, 79, 179, .3) 38%, transparent 72%); filter: blur(10px); }
+.story-content h1 { position: relative; z-index: 1; margin: 0; color: #fff; font-size: clamp(72px, 7vw, 118px); font-weight: 800; line-height: .9; letter-spacing: -7px; text-align: center; white-space: nowrap; text-shadow: 0 9px 32px rgba(0, 32, 91, .18); }
+.story-content h1 span { position: relative; display: inline-block; color: #cceeff; font-weight: 700; }
+.story-content h1 i {
+  position: absolute;
+  right: -.0575em;
+  bottom: .1em;
+  display: block;
+  width: .115em;
+  height: .115em;
+  overflow: hidden;
+  color: transparent;
+  border-radius: 50%;
+  background: var(--cyan);
+  font-size: inherit;
+  font-style: normal;
+  line-height: 0;
+  letter-spacing: 0;
+  box-shadow: 0 0 14px rgba(38, 216, 238, .2);
+}
+.story-content > p { max-width: 650px; margin: 30px auto 0; color: #d4e0f1; font-size: clamp(15px, 1.2vw, 19px); line-height: 1.65; text-align: center; }
+.story-tags { display: flex; justify-content: center; gap: 14px; margin-top: 34px; }
+.story-tags span { padding: 10px 16px; color: #cfe1f8; border: 1px solid rgba(139, 192, 255, .2); border-radius: 9px; background: rgba(52, 117, 204, .16); box-shadow: inset 0 1px rgba(255, 255, 255, .04); font-size: 11px; white-space: nowrap; }
+.story-tags i { margin-right: 8px; color: var(--cyan); font-style: normal; }
+.corner { position: absolute; z-index: 2; width: 45px; height: 45px; opacity: .95; }
+.corner-top { left: 0; top: 0; border-top: 3px solid var(--cyan); border-left: 3px solid var(--cyan); border-radius: 7px 0 0; }
+.corner-bottom { right: 0; bottom: 0; border-right: 3px solid var(--cyan); border-bottom: 3px solid var(--cyan); border-radius: 0 0 7px; }
+.story-footer { display: flex; align-items: center; gap: 8px; padding-top: 16px; color: rgba(221, 234, 250, .58); border-top: 1px solid rgba(181, 214, 255, .1); font-size: 7px; letter-spacing: .35px; }
+.story-footer i { width: 5px; height: 5px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 8px rgba(38, 216, 238, .8); }
+
+.login-access { min-height: 100vh; min-height: 100dvh; position: relative; display: flex; flex-direction: column; padding: clamp(26px, 3vw, 48px); background: var(--surface); }
+.access-topbar { min-height: 36px; display: flex; align-items: center; justify-content: flex-end; gap: 24px; }
+.support-link { display: inline-flex; align-items: center; gap: 6px; color: #647086; font-size: 9px; }
+.support-link:hover { color: var(--blue-600); }
+.support-link svg { width: 14px; fill: currentColor; }
+.language-switch { display: flex; align-items: center; gap: 1px; padding: 3px; border: 1px solid #dce3ed; border-radius: 999px; background: #fff; }
+.language-switch button { min-width: 28px; padding: 3px 7px; color: #7b8597; border: 0; border-radius: 999px; background: transparent; font-size: 8px; cursor: pointer; }
+.language-switch button.active { color: #fff; background: var(--blue-600); }
+
+.access-card { width: min(100%, 460px); margin: auto; text-align: center; }
+.acacy-logo { display: inline-flex; flex-direction: column; align-items: center; color: #1189bd; }
+.acacy-logo strong { font-size: clamp(44px, 4.6vw, 64px); line-height: .85; letter-spacing: 5px; font-weight: 700; }
+.acacy-logo span { margin-top: 8px; font-size: 12px; font-weight: 800; letter-spacing: .2px; }
+.access-card h2 { margin: 38px 0 12px; font-size: clamp(23px, 1.9vw, 29px); line-height: 1.25; letter-spacing: -1px; }
+.access-card > p:not(.login-message) { max-width: 390px; margin: 0 auto; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.login-button { width: 100%; min-height: 68px; margin-top: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: #fff; border: 0; border-radius: 999px; background: linear-gradient(100deg, #0861d9, #0889ff); box-shadow: 0 18px 38px rgba(8, 105, 232, .2); font-size: 12px; font-weight: 600; cursor: pointer; transition: transform .2s, box-shadow .2s, filter .2s; }
+.login-button:hover { transform: translateY(-2px); box-shadow: 0 22px 44px rgba(8, 105, 232, .28); filter: saturate(1.08); }
+.login-button:focus-visible { outline: 3px solid rgba(8, 137, 255, .28); outline-offset: 4px; }
+.login-button:disabled { cursor: wait; opacity: .8; }
+.login-button svg { width: 18px; fill: currentColor; }
+.login-button.loading svg { animation: pulse .7s ease-in-out infinite alternate; }
+.login-options { margin-top: 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.login-options a { color: #0869d8; font-size: 9px; }
+.login-options a:hover { text-decoration: underline; }
+.remember-option { display: inline-flex; align-items: center; gap: 7px; color: #737d90; cursor: pointer; }
+.remember-option input { position: absolute; opacity: 0; pointer-events: none; }
+.remember-option > span { width: 14px; height: 14px; display: grid; place-items: center; border: 1px solid #aeb7c5; border-radius: 3px; background: #fff; }
+.remember-option > span::after { content: "✓"; color: #fff; font-size: 9px; opacity: 0; transform: scale(.5); transition: .15s; }
+.remember-option input:checked + span { border-color: var(--blue-600); background: var(--blue-600); }
+.remember-option input:checked + span::after { opacity: 1; transform: scale(1); }
+.remember-option input:focus-visible + span { outline: 3px solid rgba(8, 137, 255, .2); }
+.remember-option em { font-size: 9px; font-style: normal; }
+.login-message { min-height: 20px; margin: 14px 0 0; color: #147f72; font-size: 10px; }
+.access-footer { margin-top: auto; padding-top: 28px; color: #a2aec1; text-align: center; font-size: 7px; }
+.access-footer nav { display: flex; align-items: center; justify-content: center; gap: 12px; }
+.access-footer nav i { width: 2px; height: 2px; border-radius: 50%; background: #aab5c6; }
+.access-footer a:hover { color: var(--blue-600); }
+.access-footer p { margin: 6px 0 0; }
+
+@keyframes pulse { from { transform: translateX(-2px); } to { transform: translateX(3px); } }
+
+@media (max-width: 1080px) {
+  .login-shell { grid-template-columns: minmax(310px, .72fr) minmax(480px, 1.28fr); }
+  .story-content { width: 94%; }
+  .story-wordmark { padding: 28px 42px 26px; }
+  .story-content h1 { font-size: clamp(48px, 6vw, 70px); letter-spacing: -4px; }
+  .story-content > p { margin-top: 34px; font-size: 14px; }
+  .story-tags { flex-direction: column; align-items: center; }
+  .portal-brand > span:last-child { max-width: 170px; }
+  .edition-badge { position: absolute; top: 52px; left: 48px; }
+}
+
+@media (max-width: 760px) {
+  .login-shell { display: block; overflow: visible; }
+  .login-story { min-height: 330px; padding: 22px; }
+  .login-story::before { left: 12px; top: 64px; width: 75px; height: 75px; }
+  .login-story::after { right: 18px; bottom: 18px; width: 90px; height: 90px; }
+  .portal-brand { font-size: 8px; letter-spacing: .8px; }
+  .portal-mark { width: 30px; height: 30px; padding: 7px; }
+  .edition-badge { position: static; font-size: 7px; }
+  .story-content { margin: 44px auto 35px; }
+  .story-wordmark { padding: 0; }
+  .story-content h1 { font-size: 50px; }
+  .story-content > p { max-width: 530px; margin-top: 22px; font-size: 12px; }
+  .story-tags, .corner, .story-footer { display: none; }
+  .login-access { min-height: 670px; padding: 22px; }
+  .access-card { margin: 72px auto auto; }
+  .acacy-logo strong { font-size: 46px; }
+  .access-card h2 { margin-top: 30px; font-size: 25px; }
+  .login-button { min-height: 60px; margin-top: 34px; }
+}
+
+@media (max-width: 460px) {
+  .login-story { min-height: 300px; }
+  .edition-badge { display: none; }
+  .support-link span { display: none; }
+  .support-link svg { width: 18px; }
+  .story-content h1 { font-size: 45px; letter-spacing: -3px; }
+  .story-content > p { font-size: 11px; }
+  .access-card { margin-top: 56px; }
+  .access-card h2 { font-size: 22px; }
+  .login-options { align-items: flex-start; }
+  .access-footer nav { flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

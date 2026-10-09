@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cổng đăng nhập Acacy ONE dành cho hệ thống vận hành và phân tích dữ liệu." />
+    <title>Đăng nhập — Acacy ONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <main class="login-shell">
+        <section class="login-story" aria-label="Giới thiệu Acacy ONE">
+            <div class="story-topbar">
+                <a class="portal-brand" href="login.html" aria-label="Acacy Digital Transformation Portal">
+                    <span class="portal-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    <span>ACACY DIGITAL TRANSFORMATION PORTAL</span>
+                </a>
+                <span class="edition-badge"><i></i> Enterprise Edition</span>
+            </div>
+
+            <div class="story-content">
+                <div class="story-wordmark">
+                    <span class="corner corner-top" aria-hidden="true"></span>
+                    <h1>Acacy <span>ONE<i aria-hidden="true"></i></span></h1>
+                    <span class="corner corner-bottom" aria-hidden="true"></span>
+                </div>
+                <p data-i18n="story">Một cổng truy cập duy nhất cho các sản phẩm số Acacy — từ hệ thống vận hành đến hệ thống phân tích kinh doanh.</p>
+                <div class="story-tags" aria-label="Lợi ích của Acacy ONE">
+                    <span><i aria-hidden="true">⌾</i> One Acacy ID • Multiple Projects</span>
+                    <span><i aria-hidden="true">✦</i> Single Sign-On (SSO)</span>
+                </div>
+            </div>
+
+            <div class="story-footer"><i></i> POWERED BY ACACY BUSINESS ANALYSIS DEPARTMENT</div>
+        </section>
+
+        <section class="login-access" aria-label="Đăng nhập Acacy ONE">
+            <div class="access-topbar">
+                <a class="support-link" href="mailto:support@acacy.com.vn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a8 8 0 0 0-8 8v6a2 2 0 0 0 2 2h2v-7H5v-1a7 7 0 0 1 14 0v1h-3v7h3a2 2 0 0 0 2-2v-6a9 9 0 0 0-9-9Z"/></svg>
+                    <span data-i18n="support">Hỗ trợ kỹ thuật</span>
+                </a>
+                <div class="language-switch" role="group" aria-label="Chọn ngôn ngữ">
+                    <button type="button" data-language="en" aria-pressed="false">EN</button>
+                    <button class="active" type="button" data-language="vi" aria-pressed="true">VI</button>
+                </div>
+            </div>
+
+            <div class="access-card">
+                <div class="acacy-logo" aria-label="Acacy — Excellent Combination">
+                    <strong>ACACY</strong>
+                    <span>Excellent Combination</span>
+                </div>
+                <h2 data-i18n="welcome">Chào mừng đến với Acacy ONE</h2>
+                <p data-i18n="description">Đăng nhập một lần để truy cập các dự án, hệ thống, dashboard và sản phẩm số được cấp quyền.</p>
+
+                <button class="login-button" id="login-button" type="button">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v-2H5V6h5V4Zm4.6 3.6L13.2 9l2 2H8v2h7.2l-2 2 1.4 1.4L19 12l-4.4-4.4Z"/></svg>
+                    <span data-i18n="login">Đăng nhập với Acacy ID</span>
+                </button>
+
+                <div class="login-options">
+                    <label class="remember-option">
+                        <input id="remember-device" type="checkbox" />
+                        <span aria-hidden="true"></span>
+                        <em data-i18n="remember">Ghi nhớ thiết bị này</em>
+                    </label>
+                    <a href="mailto:support@acacy.com.vn?subject=Ho%20tro%20tai%20khoan%20Acacy%20ONE" data-i18n="forgot">Quên mật khẩu?</a>
+                </div>
+                <p class="login-message" id="login-message" role="status" aria-live="polite"></p>
+            </div>
+
+            <footer class="access-footer">
+                <nav aria-label="Liên kết pháp lý">
+                    <a href="#" data-i18n="privacy">Chính sách bảo mật</a><i></i>
+                    <a href="#" data-i18n="terms">Điều khoản sử dụng</a><i></i>
+                    <a href="mailto:support@acacy.com.vn" data-i18n="technical">Hỗ trợ kỹ thuật</a>
+                </nav>
+                <p>© 2026 Acacy Co., Ltd. All rights reserved.</p>
+            </footer>
+        </section>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

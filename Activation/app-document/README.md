@@ -6,8 +6,8 @@ Code nằm trực tiếp trong thư mục này. Mở các trang HTML bằng trì
 
 | Phần cần sửa | HTML | CSS | JavaScript |
 | --- | --- | --- | --- |
-| Giới thiệu, dashboard, thẻ năng lực | activation.html | activation.css | activation.js |
-| Nhóm người dùng, bảng Admin, so sánh, chỉ số | activation.html | activation-roles.css | activation-roles.js |
+| Giới thiệu, dashboard, thẻ năng lực | index.html | index.css | index.js |
+| Nhóm người dùng, bảng Admin, so sánh, chỉ số | index.html | activation-roles.css | activation-roles.js |
 | Quy trình và danh mục tính năng | activation-overview.html | activation-overview.css | activation-overview.js |
 | Trải nghiệm App | activation-app.html | activation-app.css | activation-app.js |
 | Điện thoại trong trang App | activation-app.html và template JS | activation-app-phone.css | activation-app.js |

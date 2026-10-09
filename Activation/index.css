@@ -499,7 +499,7 @@ button:focus-visible {
 
 .activation-button-primary {
     color: #fff;
-    background: #2462f2;
+    background: var(--activation-primary-blue);
     box-shadow: 0 9px 20px #266bdd30;
 }
 

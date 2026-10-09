@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Acacy ONE — Activation</title>
+    <script src="login.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="activation-roles.css" />
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+
+<body>
+    <div class="activation-page-glow" aria-hidden="true"></div>
+    <svg class="ui-icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4.5" ry="10"/><path d="M2 12h20M4 6.5c5 3 11 3 16 0"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 5v7h5"/></symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m6 15 4-5 4 3 4-6"/></symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24"><path d="m12 3 8 4v10l-8 4-8-4V7l8-4Zm0 9 8-5M4 7l8 5v9M8 5l8 4v4"/></symbol>
+    <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Zm3 1V6a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+    <symbol id="icon-event" viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="9" rx="2"/><path d="M7 10V6h10v4M12 6V3M7 19v2m10-2v2M7 14h.01M12 14h.01M17 14h.01"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24"><path d="M4 10h16v11H4V10ZM3 6h18v4H3V6Zm9 0v15"/><path d="M12 6H8a2.5 2.5 0 1 1 2.4-3.2L12 6Zm0 0h4a2.5 2.5 0 1 0-2.4-3.2L12 6Z"/></symbol>
+    <symbol id="icon-ticket" viewBox="0 0 24 24"><path d="M4 5h16v4a3 3 0 0 0 0 6v4H4v-4a3 3 0 0 0 0-6V5Z"/><path d="M13 7v2m0 3v2m0 3v1"/></symbol>
+    <symbol id="icon-display" viewBox="0 0 24 24"><path d="M4 21V4h16v17M3 21h18M4 10h16M4 16h16"/><path d="M7 6h3v2H7zM14 12h3v2h-3zM7 18h3v2H7z"/></symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.5-2.8 8.2-7 10-4.2-1.8-7-5.5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+        <symbol id="icon-sliders" viewBox="0 0 24 24"><path d="M5 4v16M12 4v16M19 4v16"/><path d="M3 8h4M10 15h4M17 10h4"/></symbol>
+        <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 20c.7-3.2 3.1-5 7-5s6.3 1.8 7 5"/></symbol>
+  </svg>
+
+    <header class="site-header">
+        <a class="site-header-logo site-header-logo--wordmark" href="index.html" aria-label="Acacy ONE - Trang chủ">
+            <span class="site-logo-mark">A</span>
+            <span class="site-logo-text site-wordmark"><span>Acacy&nbsp;</span><b>ONE<i aria-hidden="true"></i></b></span>
+        </a>
+
+        <nav class="site-header-nav" aria-label="Điều hướng chính">
+            <a class="site-nav-link site-nav-link--active" href="index.html">Activation</a>
+            <a class="site-nav-link" href="../E-LEARNING_SYSTEM/index.html">E-LEARNING</a>
+            <a class="site-nav-link" href="#">Field Force</a>
+            <a class="site-nav-link" href="#">Audit</a>
+            <a class="site-nav-link" href="#">Mer</a>
+            <a class="site-nav-link" href="#">Staffing</a>
+            <a class="site-nav-link" href="#">Census</a>
+        </nav>
+
+        <button class="site-account-button" type="button" data-logout aria-label="Đăng xuất khỏi AcacyONE" title="Đăng xuất">
+            <span class="site-account-avatar">AC</span><span class="site-account-label">Acacy ID</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v-2H5V6h5V4Zm4.6 3.6L13.2 9l2 2H8v2h7.2l-2 2 1.4 1.4L19 12l-4.4-4.4Z"/></svg>
+        </button>
+    </header>
+
+    <main class="activation-hero">
+        <div class="activation-ambient activation-ambient-a" aria-hidden="true"></div>
+        <div class="activation-ambient activation-ambient-b" aria-hidden="true"></div>
+        <div class="activation-ambient-specks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+
+
+        <section class="activation-hero-copy" aria-labelledby="hero-title">
+            <div class="ui-page-intro">
+                <div class="ui-section-label"><i></i>NỀN TẢNG ACTIVATION TOÀN DIỆN</div>
+                <h1 id="hero-title">Biến mọi hoạt động<br><span>thành dữ liệu tin cậy.</span></h1>
+                <p class="activation-hero-description">Tổng hợp các năng lực đang có để đối chiếu tính năng chung và sự khác biệt của<br> hai hệ thống đang vận hành độc lập.</p>
+            </div>
+
+            <div class="activation-dashboard" id="system-overview" role="img" aria-label="Minh họa thống kê thời gian thực và giám sát vị trí GPS">
+                <div class="activation-dashboard-header">
+                    <span class="activation-window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <em><i></i>DỮ LIỆU HỆ THỐNG</em>
+                </div>
+                <div class="activation-dashboard-grid">
+                    <div class="activation-telemetry-panel">
+                        <div class="activation-panel-title"><b>Dữ liệu Real-time</b></div>
+                        <div class="activation-chart-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+                    </div>
+                    <div class="activation-telemetry-panel activation-gps-panel">
+                        <div class="activation-panel-title"><b>Tracking tại điểm bán</b></div>
+                        <div class="activation-radar" aria-hidden="true">
+                            <i class="activation-radar-wave"></i><i class="activation-radar-wave"></i><i class="activation-radar-wave"></i>
+                            <span class="activation-radar-pin"><svg class="ui-icon"><use href="#icon-pin"/></svg></span>
+                        </div>
+                        <small class="activation-connection"><i></i>Đã ghi nhận vị trí</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activation-hero-actions">
+                <a class="activation-button-secondary" href="#activation-map">Tổng quan hệ thống<b aria-hidden="true">→</b></a>
+                <a class="activation-button-primary" href="activation-overview.html">Khám phá hệ thống <b aria-hidden="true">→</b></a>
+            </div>
+            <div class="activation-statistics">
+                <div><span class="activation-statistic-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-globe"/></svg></span><span><strong>100%</strong><small>Dữ liệu thực tế</small></span></div>
+                <div><span class="activation-statistic-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-pin"/></svg></span><span><strong>GPS</strong><small>Vị trí điểm bán</small></span></div>
+                <div><span class="activation-statistic-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-clock"/></svg></span><span><strong>24/7</strong><small>Theo dõi tiến độ</small></span></div>
+                <div><span class="activation-statistic-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-chart"/></svg></span><span><strong>Real-time</strong><small>Cập nhật dữ liệu</small></span></div>
+            </div>
+        </section>
+
+        <section class="activation-map" id="activation-map" aria-label="Các năng lực Activation">
+            <div class="activation-orbit-field" aria-hidden="true">
+                <svg class="activation-orbit-svg" viewBox="0 0 800 800">
+          <g class="activation-orbit activation-orbit-wide"><ellipse cx="400" cy="400" rx="360" ry="238"/><circle class="activation-satellite activation-cyan" cx="760" cy="400" r="5"/></g>
+          <g class="activation-orbit activation-orbit-outer"><circle cx="400" cy="400" r="292"/><circle class="activation-satellite" cx="400" cy="108" r="7"/><circle class="activation-satellite activation-cyan" cx="400" cy="692" r="4"/></g>
+          <g class="activation-orbit activation-orbit-middle"><circle cx="400" cy="400" r="245"/><circle class="activation-satellite" cx="645" cy="400" r="9"/></g>
+          <g class="activation-orbit activation-orbit-inner"><circle cx="400" cy="400" r="198"/><circle class="activation-satellite activation-cyan" cx="400" cy="202" r="5"/><circle class="activation-satellite" cx="400" cy="598" r="6"/></g>
+          <g class="activation-orbit activation-orbit-near"><circle cx="400" cy="400" r="157"/></g>
+        </svg>
+            </div>
+            <div class="activation-core-wrap" aria-hidden="true">
+                <svg class="activation-blob-svg" viewBox="0 0 400 400"><path id="blobPath" d="M200 80C272 68 327 131 320 200S275 326 200 320 73 278 80 200 133 92 200 80Z"/></svg>
+                <div class="activation-core-rings"><i></i><i></i><span></span></div>
+            </div>
+            <div class="activation-orbit-dot" aria-hidden="true"></div>
+
+            <button type="button" class="activation-capability-card activation-capability--sampling" data-index="0"><span class="activation-capability-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-box"/></svg></span><span class="activation-capability-description"><strong>Sampling</strong><span>Phát mẫu &amp; ghi nhận trải nghiệm</span></span></button>
+            <button type="button" class="activation-capability-card activation-capability--merchandising" data-index="1"><span class="activation-capability-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-bag"/></svg></span><span class="activation-capability-description"><strong>Merchandising</strong><span>Giá bán, tồn kho &amp; độ phủ</span></span></button>
+            <button type="button" class="activation-capability-card activation-capability--display-contest" data-index="2"><span class="activation-capability-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-star"/></svg></span><span class="activation-capability-description"><strong>Cuộc thi trưng bày</strong><span>Tổ chức, chấm điểm và sắp xếp điểm bán</span></span></button>
+            <button type="button" class="activation-capability-card activation-capability--display" data-index="3"><span class="activation-capability-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-display"/></svg></span><span class="activation-capability-description"><strong>Trưng bày</strong><span>Kiểm tra ụ, kệ, POSM</span></span></button>
+            <button type="button" class="activation-capability-card activation-capability--event" data-index="4"><span class="activation-capability-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-event"/></svg></span><span class="activation-capability-description"><strong>Roadshow / Event</strong><span>Điều phối sự kiện &amp; nhân sự</span></span></button>
+            <button type="button" class="activation-capability-card activation-capability--promotion" data-index="5"><span class="activation-capability-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-gift"/></svg></span><span class="activation-capability-description"><strong>Promotion / Đổi quà</strong><span>Quả lý quà &amp; điều cận nhận</span></span></button>
+            <button type="button" class="activation-capability-card activation-capability--selling" data-index="6"><span class="activation-capability-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-ticket"/></svg></span><span class="activation-capability-description"><strong> Selling Activation</strong><span>Tư vấn, bán hàng &amp; doanh số </span></span></button>
+        </section>
+    </main>
+
+    <section class="roles-section" id="role-analysis" aria-labelledby="analysis-section-title">
+        <img class="roles-analysis-visual roles-analysis-visual--cube" src="assets/activation1.png" alt="" aria-hidden="true" loading="lazy">
+        <img class="roles-analysis-visual roles-analysis-visual--globe" src="assets/activation_quaccau.png" alt="" aria-hidden="true" loading="lazy">
+
+
+        <div class="roles-heading">
+            <div class="ui-section-label"><i></i>KHÁM PHÁ HỆ THỐNG</div>
+            <h2 id="analysis-section-title">Phân tích theo<br><span>từng nhóm người sử dụng.</span></h2>
+            <p>Đặt hai hệ thống trên cùng nhóm chức năng để nhìn rõ sự khác biệt về quy trình thao tác, mức độ<br> linh hoạt và khả năng kiểm soát.</p>
+        </div>
+
+        <div class="roles-content">
+            <div class="roles-audience-tabs" role="tablist" aria-label="Nhóm người sử dụng">
+                <button class="roles-audience-tab state-selected" type="button" role="tab" aria-selected="true" aria-controls="audience-panel-super-admin" data-role="super-admin">
+                    <span class="roles-audience-tab-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-shield"/></svg></span>
+                    <span><strong>Super Admin</strong><small>Quản lý cấu hình &amp; dữ liệu toàn hệ thống</small></span>
+                    <b>Đang phân tích</b>
+                </button>
+                <button class="roles-audience-tab" type="button" role="tab" aria-selected="false" aria-controls="audience-panel-admin" data-role="admin">
+                    <span class="roles-audience-tab-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-sliders"/></svg></span>
+                    <span><strong>Admin</strong><small>Thiết lập &amp; vận hành dự án</small></span>
+                    <b>Xem phân tích</b>
+                </button>
+                <button class="roles-audience-tab" type="button" role="tab" aria-selected="false" aria-controls="audience-panel-user" data-role="user">
+                    <span class="roles-audience-tab-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-user"/></svg></span>
+                    <span><strong>User</strong><small>Sử dụng chức năng theo phân quyền</small></span>
+                    <b>Xem phân tích</b>
+                </button>
+            </div>
+
+            <div class="roles-audience-panel state-visible" id="audience-panel-super-admin" role="tabpanel">
+                <div class="roles-audience-panel-top">
+                    <span class="roles-badge">SA</span>
+                    <div><small>SUPER ADMIN</small>
+                        <h3>Super Admin - Cấu hình &amp; kiểm soát toàn hệ thống</h3>
+                    </div>
+                    <p>Hệ thống A nổi bật về khả năng chủ động cấu hình, kiểm tra log và truy vết; Hệ thống S đáp ứng cấu hình cơ bản nhưng phụ thuộc IT ở các thay đổi nâng cao.</p>
+                </div>
+                <div class="roles-comparison-table-wrap">
+                    <table class="roles-comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Tiêu&nbsp;chí</th>
+                                <th><span class="roles-system-logo roles-system-logo--a">A</span>Hệ thống A</th>
+                                <th><span class="roles-system-logo roles-system-logo--s">S</span>Hệ thống S</th>
+                                <th>Nhận&nbsp;xét</th>
+                                <th>Đánh&nbsp;giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Cấu hình thời gian làm báo&nbsp;cáo</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Cauhinhtime.png" data-preview-alt="Cấu hình chu kỳ báo cáo theo ngày, tuần, tháng và vị trí nhân viên." aria-expanded="false" aria-controls="configuration-time-preview">Chủ động cấu hình theo vị trí,ngày hoặc chu kỳ&nbsp;ngày/tuần/tháng</button></td>
+                                <td>Không thể cấu&nbsp;hình</td>
+                                <td><em>A linh hoạt hơn</em></td>
+                                <td>Phụ thuộc IT khi cần thiết lập hoặc thay&nbsp;đổi</td>
+                            </tr>
+                            <tr>
+                                <th>Loại báo cáo theo vị&nbsp;trí</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Cauhinhvt.png" data-preview-alt="Cấu hình loại báo cáo theo vị trí nhân viên." aria-expanded="false" aria-controls="configuration-position-preview">Có thể cấu&nbsp;hình</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/CauhinhtheovtS.png" data-preview-alt="Hệ thống S: cấu hình loại báo cáo theo vị trí." aria-expanded="false" aria-controls="system-s-position-preview">Có thể cấu&nbsp;hình</button></td>
+                                <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                <td>Cả hai hệ thống đều đáp&nbsp;ứng</td>
+                            </tr>
+                            <tr>
+                                <th>Log nhân viên đăng nhập&nbsp;app</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/loginnv.png" data-preview-alt="Log nhân viên đăng nhập app." aria-expanded="false" aria-controls="employee-login-preview">Có thể kiểm&nbsp;tra</button></td>
+                                <td>Không thể kiểm&nbsp;tra</td>
+                                <td><em>A giám sát tốt hơn</em></td>
+                                <td>Hỗ trợ truy vết khi&nbsp;cần</td>
+                            </tr>
+                            <tr>
+                                <th>Log dữ liệu từ app gửi&nbsp;về</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/logindulieu.png" data-preview-alt="Log dữ liệu từ app gửi về." aria-expanded="false" aria-controls="app-data-log-preview">Có thể kiểm&nbsp;tra</button></td>
+                                <td>Không thể kiểm&nbsp;tra</td>
+                                <td><em>A chủ động hơn</em></td>
+                                <td>Thuận tiện đối soát dữ&nbsp;liệu</td>
+                            </tr>
+                            <tr>
+                                <th>Log Admin chỉnh sửa dữ&nbsp;liệu</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/loginadmin.png" data-preview-alt="Log Admin chỉnh sửa dữ liệu." aria-expanded="false" aria-controls="admin-edit-log-preview">Có thể kiểm&nbsp;tra</button></td>
+                                <td>Không thể kiểm&nbsp;tra</td>
+                                <td><em>A truy vết tốt hơn</em></td>
+                                <td>Dễ xác định trách nhiệm khi có thay&nbsp;đổi</td>
+                            </tr>
+                            <tr>
+                                <th>Quy trình thay đổi lịch làm&nbsp;việc</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/qtdoilich.png" data-preview-alt="Quy trình thay đổi lịch làm việc." aria-expanded="false" aria-controls="schedule-change-preview">Có thể cấu&nbsp;hình</button></td>
+                                <td>Không thể cấu&nbsp;hình</td>
+                                <td><em>A chủ động hơn</em></td>
+                                <td>Vận hành theo quy trình IT thiết lập&nbsp;sẵn</td>
+                            </tr>
+                            <tr>
+                                <th>Thiết lập menu web /&nbsp;app</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/tlmenu.png" data-preview-gallery="assets/app-a-figma/tlmenuapp.png" data-preview-combined="true" data-preview-alt="Thiết lập menu web / app."
+                                        aria-expanded="false" aria-controls="menu-setup-preview">Được cấp&nbsp;quyền</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/tlmenuS.png" data-preview-gallery="assets/app-a-figma/tlmenuS1.png" data-preview-combined="true" data-preview-alt="Hệ thống S: Thiết lập menu web / app."
+                                        aria-expanded="false" aria-controls="system-s-menu-setup-preview">Được cấp&nbsp;quyền</button></td>
+                                <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                <td>Cơ chế phân quyền tương&nbsp;đồng</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="roles-comparison-summary">
+                    <div><b>A</b><span><strong>HỆ THỐNG A</strong><b class="roles-comparison-summary-title">Chủ động, giám sát và truy vết tốt</b><small class="roles-comparison-summary-detail">Linh hoạt cấu hình, kiểm tra log và đối soát dữ liệu.</small></span></div>
+                    <div><b>S</b><span><strong>HỆ THỐNG S</strong><b class="roles-comparison-summary-title">Đáp ứng vận hành cơ bản</b><small class="roles-comparison-summary-detail">Phù hợp quy trình chuẩn và nhu cầu vận hành thường ngày.</small></span></div>
+                </div>
+            </div>
+
+            <div class="roles-audience-panel" id="audience-panel-admin" role="tabpanel" hidden>
+                <div class="roles-audience-panel-top">
+                    <span class="roles-badge roles-badge--admin">A</span>
+                    <div><small>ĐỐI TƯỢNG 01</small>
+                        <h3>Admin - Chuẩn bị dữ liệu &amp; vận hành dự án</h3>
+                    </div>
+                    <p>Cả hai hệ thống đều có đầy đủ chức năng cốt lõi; khác biệt nằm ở cách thao tác và mức độ kiểm soát.</p>
+                </div>
+                <div class="roles-admin-view-tabs" aria-label="Các nhóm chức năng Admin">
+                    <button class="roles-admin-view-tab state-selected" type="button" data-admin-view="data-master" aria-pressed="true">
+                            <span class="roles-admin-view-tab-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-box"/></svg></span>
+                            <span class="roles-admin-view-tab-number">01</span>
+                        <span><strong>Data Master</strong><small>Dữ liệu nền &amp; vận hành ban đầu</small></span>
+                    </button>
+                    <button class="roles-admin-view-tab" type="button" data-admin-view="project-kpi" aria-pressed="false">
+                            <span class="roles-admin-view-tab-icon"><svg class="ui-icon" aria-hidden="true"><use href="#icon-chart"/></svg></span>
+                            <span class="roles-admin-view-tab-number">02</span>
+                        <span><strong>KPI dự án</strong><small>Báo cáo, khảo sát &amp; Quick Test</small></span>
+                    </button>
+                </div>
+                <div class="roles-admin-view-content state-visible" data-admin-view-content="data-master">
+                    <div class="roles-comparison-table-wrap">
+                        <table class="roles-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Tiêu&nbsp;chí</th>
+                                    <th><span class="roles-system-logo roles-system-logo--a">A</span>Hệ thống A</th>
+                                    <th><span class="roles-system-logo roles-system-logo--s">S</span>Hệ thống S</th>
+                                    <th>Nhận&nbsp;xét</th>
+                                    <th>Đánh&nbsp;giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Master&nbsp;Store</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/MasterA.png" data-preview-alt="Hệ thống A: Master Store dùng chung giữa nhiều dự án." aria-expanded="false" aria-controls="master-store-preview">Dùng chung giữa nhiều dự&nbsp;án</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/MasterB.png" data-preview-alt="Hệ thống S: Master Store tách riêng theo dự án." aria-expanded="false" aria-controls="master-store-system-s-preview">Tách riêng theo dự&nbsp;án</button></td>
+                                    <td><em>Khác định hướng</em></td>
+                                    <td>A tập trung hơn, S đơn giản&nbsp;hơn</td>
+                                </tr>
+                                <tr>
+                                    <th>Khai báo cửa&nbsp;hàng</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/KbchA.png" data-preview-alt="Hệ thống A: Khai báo cửa hàng với nhiều bước, nhiều khái niệm." aria-expanded="false" aria-controls="store-declaration-preview">Nhiều bước, nhiều khái&nbsp;niệm</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/KbchB.png" data-preview-alt="Hệ thống S: Khai báo cửa hàng bằng một file." aria-expanded="false" aria-controls="store-declaration-system-s-preview">Nhập bằng một&nbsp;file</button></td>
+                                    <td><em class="roles-comparison--system-s">S thuận tiện hơn</em></td>
+                                    <td>Ít thao tác cho Admin dự&nbsp;án</td>
+                                </tr>
+                                <tr>
+                                    <th>Khai báo nhân&nbsp;viên</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/KbnvA.png" data-preview-gallery="assets/app-a-figma/KbnvfileA.png" data-preview-secondary-offset="-96px" data-preview-alt="Hệ thống A: Tạo hồ sơ và cập nhật bằng file riêng."
+                                            aria-expanded="false" aria-controls="employee-declaration-preview">Tạo hồ sơ và cập nhật bằng file&nbsp;riêng</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/KbnvB.png" data-preview-alt="Hệ thống S: Khai báo nhân viên bằng một file duy nhất." aria-expanded="false" aria-controls="employee-declaration-system-s-preview">Một file duy&nbsp;nhất</button></td>
+                                    <td><em class="roles-comparison--system-s">S ít thao tác hơn</em></td>
+                                    <td>Giảm bước nhập và cập nhật dữ&nbsp;liệu</td>
+                                </tr>
+                                <tr>
+                                    <th>Phân quyền&nbsp;Store</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/PqstroreA.png" data-preview-alt="Hệ thống A: Không bắt buộc phân quyền Store trước khi xếp lịch." aria-expanded="false" aria-controls="store-permission-preview">Không bắt buộc trước khi xếp&nbsp;lịch</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/PqstroreB.png" data-preview-alt="Hệ thống S: Bắt buộc phân quyền Store trước khi xếp lịch." aria-expanded="false" aria-controls="store-permission-system-s-preview">Bắt buộc trước khi xếp&nbsp;lịch</button></td>
+                                    <td><em class="roles-comparison--different">Tùy mục tiêu</em></td>
+                                    <td>A linh hoạt, S kiểm soát&nbsp;chặt</td>
+                                </tr>
+                                <tr>
+                                    <th>Xóa lịch đã chấm&nbsp;công</th>
+                                    <td>Không được&nbsp;xóa</td>
+                                    <td>Không được&nbsp;xóa</td>
+                                    <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                    <td>Cùng bảo vệ dữ liệu chấm&nbsp;công</td>
+                                </tr>
+                                <tr>
+                                    <th>Xóa lịch chưa chấm&nbsp;công</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/xoalccc.png" data-preview-alt="Hệ thống A: Lịch hiện tại hoặc quá khứ cần xác nhận email." aria-expanded="false" aria-controls="delete-uncompleted-schedule-preview">Lịch hiện tại/quá khứ cần xác nhận&nbsp;email</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/xoalcccB.png" data-preview-alt="Hệ thống S: Admin được chủ động xóa lịch chưa chấm công." aria-expanded="false" aria-controls="delete-uncompleted-schedule-system-s-preview">Admin được chủ động&nbsp;xóa</button></td>
+                                    <td><em class="roles-comparison--system-s">S linh hoạt hơn</em></td>
+                                    <td>S giảm phụ thuộc vào quy trình xác&nbsp;nhận</td>
+                                </tr>
+                                <tr>
+                                    <th>Nhân viên nghỉ&nbsp;việc</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/nvnv.png" data-preview-alt="Hệ thống A: Nhân viên nghỉ việc được cập nhật bằng file riêng." aria-expanded="false" aria-controls="employee-resignation-preview">Cập nhật bằng file&nbsp;riêng</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/nvnvB.png" data-preview-alt="Hệ thống S: Khóa lịch ngay khi cập nhật ngày nghỉ." aria-expanded="false" aria-controls="employee-resignation-system-s-preview">Khóa lịch ngay khi cập nhật ngày&nbsp;nghỉ</button></td>
+                                    <td><em class="roles-comparison--system-s">S tự động hơn</em></td>
+                                    <td>Tự động kiểm soát lịch làm&nbsp;việc</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="roles-comparison-summary">
+                        <div><b>A</b><span><strong>HỆ THỐNG A</strong><b class="roles-comparison-summary-title">Kiểm soát tập trung</b><small class="roles-comparison-summary-detail">Linh hoạt trong phân quyền và phù hợp khi quản lý dữ liệu dùng chung giữa nhiều dự án.</small></span></div>
+                        <div><b>S</b><span><strong>HỆ THỐNG S</strong><b class="roles-comparison-summary-title">Thao tác tinh gọn</b><small class="roles-comparison-summary-detail">Giảm số bước nhập liệu, tăng tính chủ động và tự động kiểm soát lịch làm việc.</small></span></div>
+                    </div>
+                </div>
+                <div class="roles-admin-view-content" data-admin-view-content="project-kpi" hidden>
+                    <div class="roles-comparison-table-wrap">
+                        <table class="roles-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Tiêu&nbsp;chí</th>
+                                    <th><span class="roles-system-logo roles-system-logo--a">A</span>Hệ thống A</th>
+                                    <th><span class="roles-system-logo roles-system-logo--s">S</span>Hệ thống S</th>
+                                    <th>Nhận&nbsp;xét</th>
+                                    <th>Đánh&nbsp;giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Đăng ký tính năng theo người&nbsp;dùng</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/dktnnd.png" data-preview-alt="Hệ thống A: Admin phân quyền các tính năng cho người dùng." aria-expanded="false" aria-controls="user-feature-registration-preview">Admin phân quyền các tính năng cho người&nbsp;dùng</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/dktnndB.png" data-preview-alt="Hệ thống S: Admin phân quyền các tính năng cho người dùng." aria-expanded="false" aria-controls="user-feature-registration-system-s-preview">Admin phân quyền các tính năng cho người&nbsp;dùng</button></td>
+                                    <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                    <td>Cùng hỗ trợ cấu hình theo nhóm người&nbsp;dùng</td>
+                                </tr>
+                                <tr>
+                                    <th>Phân công báo cáo cho SUP và&nbsp;PG</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Sup-PG.png" data-preview-alt="Hệ thống A: Admin chủ động quy định báo cáo SUP/PG phải thực hiện." aria-expanded="false" aria-controls="sup-pg-report-assignment-preview">Admin chủ động quy định SUP/PG phải thực hiện báo cáo&nbsp;nào</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Sup-PGB.png" data-preview-alt="Hệ thống S: SUP/PG được quy định báo cáo cần thực hiện." aria-expanded="false" aria-controls="sup-pg-report-assignment-system-s-preview">SUP/PG được quy định báo cáo cần thực&nbsp;hiện</button></td>
+                                    <td><em>Theo vai trò</em></td>
+                                    <td>Cả hai xác định báo cáo theo vị&nbsp;trí</td>
+                                </tr>
+                                <tr>
+                                    <th>Chu kỳ thực hiện báo&nbsp;cáo</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Ckthbc.png" data-preview-gallery="assets/app-a-figma/ckthbc1.png" data-preview-combined="true" data-preview-compact="true" data-preview-labels="|"
+                                            data-preview-alt="Hệ thống A: Thiết lập chu kỳ thực hiện báo cáo." aria-expanded="false" aria-controls="report-cycle-preview">Admin thiết lập theo ngày, tuần, tháng hoặc ngày bất&nbsp;kỳ</button></td>
+                                    <td>Chu kỳ và điều kiện bắt buộc do IT thiết&nbsp;lập</td>
+                                    <td><em>A chủ động hơn</em></td>
+                                    <td>S phụ thuộc IT khi thay&nbsp;đổi</td>
+                                </tr>
+                                <tr>
+                                    <th>Báo cáo số bán, tồn kho,&nbsp;OSA...</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Bcsb.png" data-preview-alt="Hệ thống A: Khai báo theo từng Store và cập nhật lại mỗi tháng." aria-expanded="false" aria-controls="sales-stock-osa-preview">Khai báo theo từng Store và cập nhật lại mỗi&nbsp;tháng</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/BcsbB.png" data-preview-alt="Hệ thống S: Khai báo một lần, chỉ cập nhật biểu mẫu khi có thay đổi." aria-expanded="false" aria-controls="sales-stock-osa-system-s-preview">Khai báo một lần; chỉ cập nhật biểu mẫu khi có thay&nbsp;đổi</button></td>
+                                    <td><em class="roles-comparison--system-s">S tinh gọn hơn</em></td>
+                                    <td>Giảm thiết lập lại hằng&nbsp;tháng</td>
+                                </tr>
+                                <tr>
+                                    <th>Cập nhật biểu mẫu báo&nbsp;cáo</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Cnbcbm.png" data-preview-alt="Hệ thống A: Admin duy trì cấu hình biểu mẫu báo cáo theo Store và theo kỳ." aria-expanded="false"
+                                            aria-controls="report-template-update-preview">Admin duy trì cấu hình theo Store và theo&nbsp;kỳ</button></td>
+                                    <td>Cập nhật biểu mẫu khi phát sinh nhu&nbsp;cầu</td>
+                                    <td><em class="roles-comparison--different">Khác cách vận hành</em></td>
+                                    <td>A linh hoạt theo Store; S thuận tiện với mẫu ổn&nbsp;định</td>
+                                </tr>
+                                <tr>
+                                    <th>Bộ khảo&nbsp;sát</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Bks.png" data-preview-alt="Hệ thống A: Tạo nhanh KPI tùy biến như NPD, tracking đối thủ và yêu cầu phát sinh." aria-expanded="false"
+                                            aria-controls="survey-set-preview">Tạo nhanh KPI tùy biến như NPD, tracking đối thủ và yêu cầu phát&nbsp;sinh</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/BcsbB.png" data-preview-alt="Hệ thống S: Bộ khảo sát chủ yếu dùng để thu thập thông tin." aria-expanded="false" aria-controls="survey-set-system-s-preview">Chủ yếu dùng để thu thập thông&nbsp;tin</button></td>
+                                    <td><em>A tùy biến tốt</em></td>
+                                    <td>S phù hợp khảo sát thu thập dữ&nbsp;liệu</td>
+                                </tr>
+                                <tr>
+                                    <th>Quick Test trước chấm&nbsp;công</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Quittcc.png" data-preview-alt="Hệ thống A: Admin cập nhật câu hỏi và tự động tráo câu hỏi." aria-expanded="false" aria-controls="quick-test-before-attendance-preview">Admin cập nhật câu hỏi và tự động tráo câu&nbsp;hỏi</button></td>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/QuittccB.png" data-preview-alt="Hệ thống S: Admin cập nhật câu hỏi và tự động tráo câu hỏi trước chấm công." aria-expanded="false"
+                                            aria-controls="quick-test-before-attendance-system-s-preview">Admin cập nhật câu hỏi và tự động tráo câu&nbsp;hỏi</button></td>
+                                    <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                    <td>Hạn chế nhân viên nhận bộ câu hỏi giống&nbsp;nhau</td>
+                                </tr>
+                                <tr>
+                                    <th>Phân quyền người làm Quick&nbsp;Test</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Pqngltest.png" data-preview-alt="Hệ thống A: Phân quyền trực tiếp từng nhân viên phải làm bài." aria-expanded="false" aria-controls="quick-test-permission-preview">Phân quyền trực tiếp từng nhân viên phải làm&nbsp;bài</button></td>
+                                    <td>Phân quyền theo&nbsp;Position</td>
+                                    <td><em class="roles-comparison--different">Khác mức chi tiết</em></td>
+                                    <td>A theo từng người; S đơn giản và giảm bỏ&nbsp;sót</td>
+                                </tr>
+                                <tr>
+                                    <th>Thiết lập số lượng câu&nbsp;hỏi</th>
+                                    <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Pqngltest.png" data-preview-alt="Hệ thống A: Admin chủ động thiết lập số lượng câu hỏi." aria-expanded="false" aria-controls="quick-test-question-count-preview">Admin chủ động thiết lập số lượng câu&nbsp;hỏi</button></td>
+                                    <td>Admin không chủ động thiết lập được số lượng câu&nbsp;hỏi</td>
+                                    <td><em>A linh hoạt hơn</em></td>
+
+                                </tr>
+                                <tr>
+                                    <th>Nhân viên mới và Quick&nbsp;Test</th>
+                                    <td>Có thể bị bỏ sót nếu Admin chưa phân&nbsp;quyền</td>
+                                    <td>Tự động áp dụng theo Position đã được phân&nbsp;quyền</td>
+                                    <td><em class="roles-comparison--system-s">S tự động hơn</em></td>
+                                    <td>Phù hợp cách áp dụng Quick Test theo&nbsp;Position</td>
+                                </tr>
+                                <tr>
+                                    <th>Mức độ chủ động của&nbsp;Admin</th>
+                                    <td>Cao với chu kỳ báo cáo, KPI tùy biến và cấu hình Quick&nbsp;Test</td>
+                                    <td>Một số cấu hình phải nhờ IT thiết&nbsp;lập</td>
+                                    <td><em>A chủ động hơn</em></td>
+                                    <td>S chuẩn hóa hơn nhưng phụ thuộc&nbsp;IT</td>
+                                </tr>
+                                <tr>
+                                    <th>Khối lượng vận hành định&nbsp;kỳ</th>
+                                    <td>Cao do cập nhật báo cáo theo Store mỗi tháng và phân quyền chi&nbsp;tiết</td>
+                                    <td>Thấp hơn do khai báo một lần và phân quyền theo&nbsp;Position</td>
+                                    <td><em class="roles-comparison--system-s">S ít việc lặp lại</em></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="roles-comparison-summary">
+                        <div><b>A</b><span><strong>HỆ THỐNG A</strong><b class="roles-comparison-summary-title">Chủ động &amp; tùy biến cao</b><small class="roles-comparison-summary-detail">Mạnh ở chu kỳ báo cáo, KPI tùy biến và cấu hình Quick Test chi tiết.</small></span></div>
+                        <div><b>S</b><span><strong>HỆ THỐNG S</strong><b class="roles-comparison-summary-title">Chuẩn hóa &amp; ít thao tác lặp</b><small class="roles-comparison-summary-detail">Tự động theo Position và khai báo biểu mẫu một lần; một số thay đổi cần hỗ trợ từ IT.</small></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roles-audience-panel" id="audience-panel-user" role="tabpanel" hidden>
+                <div class="roles-audience-panel-top">
+                    <span class="roles-badge roles-badge--user">U</span>
+                    <div><small>USER</small>
+                        <h3>User - Trải nghiệm ứng dụng &amp; thực hiện công việc</h3>
+                    </div>
+                    <p>Cả hai hệ thống đều đáp ứng nghiệp vụ hiện trường; khác biệt chính nằm ở cách tổ chức giao diện, khả năng tùy chỉnh và mức độ linh hoạt.</p>
+                </div>
+                <div class="roles-comparison-table-wrap">
+                    <table class="roles-comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Tiêu&nbsp;chí</th>
+                                <th><span class="roles-system-logo roles-system-logo--a">A</span>Hệ thống A</th>
+                                <th><span class="roles-system-logo roles-system-logo--s">S</span>Hệ thống S</th>
+                                <th>Nhận&nbsp;xét</th>
+                                <th>Đánh&nbsp;giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Thời gian làm&nbsp;việc</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Tglvc.png" data-preview-alt="Hệ thống A: Hiển thị ca và thời gian làm việc trước khi chấm công, sử dụng GPS." aria-expanded="false"
+                                        aria-controls="working-time-preview">Hiển thị ca và thời gian làm việc trước khi chấm công, sử dụng&nbsp;GPS</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/tglvB.png" data-preview-alt="Hệ thống S: Hiển thị ca và thời gian làm việc trước khi chấm công, sử dụng GPS." aria-expanded="false"
+                                        aria-controls="working-time-system-s-preview">Hiển thị ca và thời gian làm việc trước khi chấm công, sử dụng&nbsp;GPS</button></td>
+                                <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                <td>Hai hệ thống đều đáp ứng nghiệp vụ chấm&nbsp;công</td>
+                            </tr>
+                            <tr>
+                                <th>Giao&nbsp;diện</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/GD.png" data-preview-gallery="assets/app-a-figma/GDA.png" data-preview-combined="true" data-preview-labels="|" data-preview-alt="Hệ thống A: Giao diện và màu sắc theo dự án."
+                                        aria-expanded="false" aria-controls="interface-system-a-preview">Sử dụng một màu chung, thay hình đăng nhập và màu sắc theo dự&nbsp;án</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/GDB.jpg" data-preview-gallery="assets/app-a-figma/GDB1.jpg" data-preview-combined="true" data-preview-labels="|" data-preview-alt="Hệ thống S: Giao diện đăng nhập có thể khác nhau theo từng dự án."
+                                        aria-expanded="false" aria-controls="interface-system-s-preview">Giao diện đăng nhập có thể khác nhau theo từng dự&nbsp;án</button></td>
+                                <td><em class="roles-comparison--different">Khác định hướng</em></td>
+                                <td>A đồng nhất và dễ làm quen; S thể hiện nhận diện riêng của từng dự&nbsp;án</td>
+                            </tr>
+                            <tr>
+                                <th>Màn hình trang&nbsp;chủ</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/trangchu.png" data-preview-alt="Hệ thống A: Màn hình trang chủ hiển thị các nhóm Cửa hàng, Tài liệu, Quick Test và Bảng chấm công."
+                                        aria-expanded="false" aria-controls="home-screen-preview">Hiển thị các tính năng như Cửa hàng, Tài liệu, Quick Test và Bảng chấm công; người dùng phải vào từng nhóm chức&nbsp;năng</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/trangchuB.jpg" data-preview-alt="Hệ thống S: Hiển thị trực tiếp Store và menu công việc trên trang chủ." aria-expanded="false" aria-controls="home-screen-system-s-preview">Hiển thị trực tiếp Store và menu công việc; Store và menu công việc rõ ràng ngay trên trang&nbsp;chủ</button></td>
+                                <td><em class="roles-comparison--system-s">S truy cập nhanh</em></td>
+                                <td>S giúp tiếp cận công việc nhanh hơn; A phân nhóm chức năng rõ&nbsp;hơn</td>
+                            </tr>
+                            <tr>
+                                <th>Báo cáo đầu&nbsp;ra</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Bcdaura.png" data-preview-alt="Hệ thống A: Báo cáo đầu ra để người dùng xem lại kết quả." aria-expanded="false" aria-controls="output-report-preview">Có thể đáp ứng báo cáo đầu ra để người dùng xem lại kết&nbsp;quả</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/BcdauraB.jpg" data-preview-alt="Hệ thống S: Báo cáo đầu ra để người dùng xem lại kết quả." aria-expanded="false" aria-controls="output-report-system-s-preview">Có thể đáp ứng báo cáo đầu ra để người dùng xem lại kết&nbsp;quả</button></td>
+                                <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                <td>Hai hệ thống đều giúp nhân viên kiểm tra kết quả đã báo&nbsp;cáo</td>
+                            </tr>
+                            <tr>
+                                <th>Lịch&nbsp;sử</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Ls.png" data-preview-alt="Hệ thống A: Xem lại hình ảnh và lịch sử công việc trước đó." aria-expanded="false" aria-controls="work-history-preview">Có thể xem lại hình ảnh; mặc định cho phép xem lại lịch sử công việc trước&nbsp;đó</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/LsB.jpg" data-preview-alt="Hệ thống S: Có thể xem lại hình ảnh đã chụp." aria-expanded="false" aria-controls="work-history-system-s-preview">Có thể xem lại hình ảnh đã&nbsp;chụp</button></td>
+                                <td><em>A truy vết tốt hơn</em></td>
+                                <td>A hỗ trợ tra cứu và đối soát đầy đủ&nbsp;hơn</td>
+                            </tr>
+                            <tr>
+                                <th>Làm mới dữ&nbsp;liệu</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Lmoidl.png" data-preview-alt="Hệ thống A: Vào mục Cửa hàng và bấm nút tải lại dữ liệu." aria-expanded="false" aria-controls="data-refresh-preview">Vào mục Cửa hàng và bấm nút tải&nbsp;lại</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/LmoidlB.jpg" data-preview-alt="Hệ thống S: Vuốt màn hình trang chủ để tải lại dữ liệu." aria-expanded="false" aria-controls="data-refresh-system-s-preview">Vuốt màn hình trang chủ để tải&nbsp;lại</button></td>
+                                <td><em class="roles-comparison--different">Khác thao tác</em></td>
+                                <td>S thao tác nhanh hơn; A có nút chức năng rõ&nbsp;ràng</td>
+                            </tr>
+                            <tr>
+                                <th>Chủ động thay đổi&nbsp;lịch</th>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/Cdtdlich.png" data-preview-alt="Hệ thống A: Nhân viên gửi yêu cầu thay đổi lịch theo tình hình thị trường." aria-expanded="false"
+                                        aria-controls="proactive-schedule-change-preview">Nhân viên có thể gửi yêu cầu thay đổi lịch theo tình hình thị&nbsp;trường</button></td>
+                                <td class="roles-preview-cell"><button class="roles-preview-trigger" type="button" data-preview-src="assets/app-a-figma/CdtdlichB.jpg" data-preview-alt="Hệ thống S: Nhân viên có thể gửi yêu cầu thay đổi lịch theo tình hình thị trường." aria-expanded="false"
+                                        aria-controls="proactive-schedule-change-system-s-preview">Nhân viên có thể gửi yêu cầu thay đổi lịch theo tình hình thị&nbsp;trường</button></td>
+                                <td><em class="roles-comparison--similar">Tương đồng</em></td>
+                                <td>Hai hệ thống đều hỗ trợ vận hành linh&nbsp;hoạt</td>
+                            </tr>
+                            <tr>
+                                <th>Thay đổi kích thước&nbsp;chữ</th>
+                                <td>Người dùng tự điều chỉnh kích thước chữ trực tiếp trên&nbsp;App</td>
+                                <td>Nếu cần chữ lớn hơn, người dùng phải phụ thuộc cài đặt của điện&nbsp;thoại</td>
+                                <td><em>A thuận tiện hơn</em></td>
+                                <td>Đặc biệt phù hợp với người dùng lớn tuổi hoặc cần chữ dễ&nbsp;đọc</td>
+                            </tr>
+                            <tr>
+                                <th>Lịch làm&nbsp;việc</th>
+                                <td>Áp dụng một quy trình đổi lịch chung cho tất cả Position; người dùng phải lựa chọn và thực hiện các bước phù&nbsp;hợp</td>
+                                <td>Phân chia quy trình đổi lịch riêng theo từng Position; người dùng chỉ thực hiện các chức năng và bước phù&nbsp;hợp</td>
+                                <td><em class="roles-comparison--system-s">S sát vai trò hơn</em></td>
+                                <td>S phù hợp đặc thù từng Position và giúp thao tác ít hơn; A có tính chuẩn hóa nhưng người dùng có thể phải chọn bước không phù&nbsp;hợp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="roles-comparison-summary">
+                    <div><b>A</b><span><strong>HỆ THỐNG A</strong><b class="roles-comparison-summary-title">Đồng nhất, dễ truy vết &amp; dễ tiếp cận</b><small class="roles-comparison-summary-detail">Giao diện nhất quán, lịch sử công việc đầy đủ, chức năng rõ ràng và người dùng có thể tự điều chỉnh kích thước chữ trên App.</small></span></div>
+                    <div><b>S</b><span><strong>HỆ THỐNG S</strong><b class="roles-comparison-summary-title">Nhanh, trực tiếp &amp; phù hợp từng Position</b><small class="roles-comparison-summary-detail">Store và menu công việc hiển thị ngay trang chủ, làm mới dữ liệu bằng thao tác vuốt và quy trình đổi lịch được thiết kế riêng theo Position.</small></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="roles-impact-frames" aria-label="Giá trị khác biệt">
+            <div class="roles-impact-panel" data-impact-panel>
+                <div class="roles-impact-copy"><small>GIÁ TRỊ KHÁC BIỆT</small>
+                    <h3><span>Quyết định dựa trên dữ</span> <span>liệu, không phỏng đoán.</span></h3>
+                    <p>Giảm phụ thuộc vào báo cáo Excel thủ công. Mọi quyết định tiếp tục, điều chỉnh hay mở rộng chương trình đều có bằng chứng rõ ràng.</p><span>✓ Tự động hóa số liệu　 ✓ Đối chiếu đa nền tảng</span></div>
+                <div class="roles-impact-metrics">
+                    <div tabindex="0"><strong data-value="-60%">-60%</strong><small>Thời gian tổng hợp<br>báo cáo</small></div>
+                    <div tabindex="0"><strong data-value="+35%">+35%</strong><small>Tốc độ xử lý<br>đối soát</small></div>
+                    <div tabindex="0"><strong data-value="100%">100%</strong><small>Điểm bán có<br>bằng chứng</small></div>
+                    <div tabindex="0"><strong data-value="2 hệ thống">2 hệ thống</strong><small>Đối chiếu trên cùng<br>nhóm tính năng</small></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <a class="site-footer-logo site-footer-logo--wordmark" href="#" aria-label="Acacy ONE - về đầu trang">
+                <span class="site-logo-mark" aria-hidden="true">A</span>
+                <span class="site-logo-text site-wordmark"><span>Acacy&nbsp;</span><b>ONE<i aria-hidden="true"></i></b></span>
+            </a>
+            <p class="site-footer-text">© 2026 Acacy ONE
+                <span class="site-footer-separator">•</span> Nền tảng quản lý hoạt động Activation
+            </p>
+            <nav class="site-footer-nav" aria-label="Điều hướng cuối trang">
+                <a href="#activation-map">Năng lực</a>
+                <a href="#role-analysis">Nhóm người dùng</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="activation-roles.js"></script>
+</body>
+
+</html>
