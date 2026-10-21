@@ -1,8 +1,14 @@
+
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "cleanUrls": false,
   "redirects": [
+    {
+      "source": "/",
+      "destination": "/Activation/index.html",
+      "permanent": false
+    },
     {
       "source": "/elearning",
       "destination": "/elearning/",
@@ -11,7 +17,7 @@
   ],
   "rewrites": [
     {
-      "source": "/",
+      "source": "/index.html",
       "destination": "/Activation/index.html"
     },
     {
