@@ -1,0 +1,170 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/elearning",
+      "destination": "/elearning/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/Activation/index.html"
+    },
+    {
+      "source": "/index.css",
+      "destination": "/Activation/index.css"
+    },
+    {
+      "source": "/index.js",
+      "destination": "/Activation/index.js"
+    },
+    {
+      "source": "/login.html",
+      "destination": "/Activation/login.html"
+    },
+    {
+      "source": "/login.css",
+      "destination": "/Activation/login.css"
+    },
+    {
+      "source": "/login.js",
+      "destination": "/Activation/login.js"
+    },
+    {
+      "source": "/header-footer.css",
+      "destination": "/Activation/header-footer.css"
+    },
+    {
+      "source": "/activation-overview.html",
+      "destination": "/Activation/activation-overview.html"
+    },
+    {
+      "source": "/activation-overview.css",
+      "destination": "/Activation/activation-overview.css"
+    },
+    {
+      "source": "/activation-overview.js",
+      "destination": "/Activation/activation-overview.js"
+    },
+    {
+      "source": "/activation-app.html",
+      "destination": "/Activation/activation-app.html"
+    },
+    {
+      "source": "/activation-app.css",
+      "destination": "/Activation/activation-app.css"
+    },
+    {
+      "source": "/activation-app.js",
+      "destination": "/Activation/activation-app.js"
+    },
+    {
+      "source": "/activation-app-header-colors.js",
+      "destination": "/Activation/activation-app-header-colors.js"
+    },
+    {
+      "source": "/activation-app-phone.css",
+      "destination": "/Activation/activation-app-phone.css"
+    },
+    {
+      "source": "/activation-app-responsive.css",
+      "destination": "/Activation/activation-app-responsive.css"
+    },
+    {
+      "source": "/activation-app-system-s.js",
+      "destination": "/Activation/activation-app-system-s.js"
+    },
+    {
+      "source": "/activation-roles.css",
+      "destination": "/Activation/activation-roles.css"
+    },
+    {
+      "source": "/activation-roles.js",
+      "destination": "/Activation/activation-roles.js"
+    },
+    {
+      "source": "/activation-sampling.html",
+      "destination": "/Activation/activation-sampling.html"
+    },
+    {
+      "source": "/staffing-integration.js",
+      "destination": "/Activation/staffing-integration.js"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/Activation/assets/:path*"
+    },
+    {
+      "source": "/activation",
+      "destination": "/Activation/index.html"
+    },
+    {
+      "source": "/activation/",
+      "destination": "/Activation/index.html"
+    },
+    {
+      "source": "/activation/login",
+      "destination": "/Activation/login.html"
+    },
+    {
+      "source": "/activation/overview",
+      "destination": "/Activation/activation-overview.html"
+    },
+    {
+      "source": "/activation/app",
+      "destination": "/Activation/activation-app.html"
+    },
+    {
+      "source": "/activation/sampling",
+      "destination": "/Activation/activation-sampling.html"
+    },
+    {
+      "source": "/activation/:path*",
+      "destination": "/Activation/:path*"
+    },
+    {
+      "source": "/elearning/",
+      "destination": "/E-LEARNING_SYSTEM/index.html"
+    },
+    {
+      "source": "/elearning/overview",
+      "destination": "/E-LEARNING_SYSTEM/overview.html"
+    },
+    {
+      "source": "/elearning/app",
+      "destination": "/E-LEARNING_SYSTEM/app-web.html"
+    },
+    {
+      "source": "/elearning/staffing",
+      "destination": "/E-LEARNING_SYSTEM/staffing.html"
+    },
+    {
+      "source": "/elearning/:path*",
+      "destination": "/E-LEARNING_SYSTEM/:path*"
+    },
+    {
+      "source": "/staffing",
+      "destination": "/Staffing/index.html"
+    },
+    {
+      "source": "/staffing/",
+      "destination": "/Staffing/index.html"
+    },
+    {
+      "source": "/staffing/overview",
+      "destination": "/Staffing/acacy-systems.html"
+    },
+    {
+      "source": "/staffing/system",
+      "destination": "/Staffing/staffing.html"
+    },
+    {
+      "source": "/staffing/:path*",
+      "destination": "/Staffing/:path*"
+    }
+  ]
+}

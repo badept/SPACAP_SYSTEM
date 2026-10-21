@@ -60,6 +60,8 @@
 @media (max-width:1250px) {
   .app-page { width: calc(100% - 48px); }
 
+  .app-pattern { right: 0; }
+
   .app-experience-layout { grid-template-columns: 260px minmax(0, 1fr); gap: 18px; }
 
   .app-journey-panel { grid-row: 1 / 3; }

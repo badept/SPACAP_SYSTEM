@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Preview | Đội ngũ dự án</title>
+    <style>
+        html,
+        body,
+        iframe {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            border: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        localStorage.setItem('acacyOneAuthenticated', 'true');
+
+        const preview = document.createElement('iframe');
+        preview.title = 'Xem trước giao diện Đội ngũ dự án';
+        preview.addEventListener('load', () => {
+            setTimeout(() => {
+                const doc = preview.contentDocument;
+                const projectAudienceButton = doc.querySelector('[data-audience-button="sup"]');
+                const requestedMode = new URLSearchParams(location.search).get('mode');
+
+                projectAudienceButton?.click();
+                if (requestedMode === 'market') {
+                    doc.querySelector('[data-project-mode="market"]')?.click();
+                }
+                doc.getElementById('kham-pha-chi-tiet')?.scrollIntoView();
+            }, 250);
+        });
+        preview.src = '../app-web.html';
+        document.body.append(preview);
+    </script>
+</body>
+
+</html>

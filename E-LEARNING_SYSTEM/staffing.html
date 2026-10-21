@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ACACY Staffing System - Nội dung Staffing được tích hợp đầy đủ vào hệ thống SPACAP.">
+    <title>ACACY Staffing System | Acacy ONE</title>
+    <script src="../Activation/login.js"></script>
+    <link rel="stylesheet" href="/Activation/assets/shared/fonts/fonts.css">
+    <link rel="stylesheet" href="/Activation/assets/shared/responsive-stability.css">
+    <link rel="stylesheet" href="../Activation/header-footer.css?v=7">
+    <style>
+        html,body{margin:0;min-height:100%;background:#f7f9fd}body{overflow:hidden}.staffing-page,.staffing-frame-wrap{min-height:calc(100vh - 72px)}.staffing-frame-wrap{position:relative;width:100%}.staffing-frame{display:block;width:100%;height:calc(100vh - 72px);min-height:calc(100vh - 72px);border:0;background:#f7f9fd}.staffing-loading{position:absolute;inset:0;display:grid;place-items:center;background:#f7f9fd;color:#163a69;font:700 .95rem/1.5 Inter,Arial,sans-serif;letter-spacing:.02em;z-index:2}.staffing-loading[hidden]{display:none!important}
+    </style>
+</head>
+<body>
+    <header class="site-header" data-header>
+        <a class="site-header-logo site-header-logo--wordmark" href="../Activation/index.html" aria-label="Acacy ONE - Trang chủ">
+            <span class="site-logo-mark">A</span>
+            <span class="site-logo-text site-wordmark"><span>Acacy&nbsp;</span><b>ONE<i aria-hidden="true"></i></b></span>
+        </a>
+        <nav class="site-header-nav" aria-label="Điều hướng chính">
+            <a class="site-nav-link" href="../Activation/index.html">Activation</a>
+            <a class="site-nav-link" href="overview.html">E-LEARNING</a>
+            <a class="site-nav-link" href="#">Field Force</a>
+            <a class="site-nav-link" href="#">Audit</a>
+            <a class="site-nav-link" href="#">Mer</a>
+            <a class="site-nav-link site-nav-link--active" href="staffing.html" aria-current="page">Staffing</a>
+            <a class="site-nav-link" href="#">Census</a>
+        </nav>
+        <button class="site-account-button" type="button" data-logout aria-label="Đăng xuất khỏi AcacyONE" title="Đăng xuất">
+            <span class="site-account-avatar">AC</span><span class="site-account-label">Acacy ID</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5v-2H5V6h5V4Zm4.6 3.6L13.2 9l2 2H8v2h7.2l-2 2 1.4 1.4L19 12l-4.4-4.4Z"/></svg>
+        </button>
+    </header>
+    <main class="staffing-page">
+        <div class="staffing-frame-wrap">
+            <iframe id="staffing-frame" class="staffing-frame" title="ACACY Staffing System" src="../Staffing/staffing.html" scrolling="yes"></iframe>
+            <div id="staffing-loading" class="staffing-loading" role="status">Đang tải nội dung Staffing...</div>
+        </div>
+    </main>
+    <script src="staffing-integration.js"></script>
+</body>
+</html>

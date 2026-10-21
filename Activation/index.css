@@ -7,7 +7,7 @@
     --ink: #101b32;
     --muted: #61718c;
     --ease: cubic-bezier(.22, .8, .2, 1);
-    --header-height: 76px;
+    --header-height: 72px;
 }
 
 * {
@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: clip;
 }
 
 body {
@@ -61,13 +62,16 @@ button:focus-visible {
 }
 
 .activation-hero {
+    --activation-gutter: clamp(32px, 5vw, 72px);
     position: relative;
     isolation: isolate;
-    height: calc(100svh - var(--header-height));
-    min-height: 590px;
-    padding: clamp(20px, 3vh, 32px) clamp(28px, 5vw, 96px);
+    width: min(100%, 1920px);
+    margin-inline: auto;
+    height: auto;
+    min-height: max(590px, calc(100svh - var(--header-height)));
+    padding: clamp(20px, 3vh, 32px) var(--activation-gutter);
     display: grid;
-    grid-template-columns: 43% 57%;
+    grid-template-columns: minmax(0, 43fr) minmax(0, 57fr);
     overflow: hidden;
     background: transparent;
 }
@@ -468,7 +472,7 @@ button:focus-visible {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    padding: 0 8px;
+    padding: 0;
 }
 
 .activation-hero-actions a {
@@ -499,7 +503,7 @@ button:focus-visible {
 
 .activation-button-primary {
     color: #fff;
-    background: #2462f2;
+    background: var(--activation-primary-blue);
     box-shadow: 0 9px 20px #266bdd30;
 }
 
@@ -518,7 +522,7 @@ button:focus-visible {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .activation-statistics>div {
@@ -604,11 +608,6 @@ button:focus-visible {
     fill: none;
     stroke: #3d7cff;
     stroke-width: 1.5;
-}
-
-.activation-orbit-wide {
-    stroke: #37d6f678;
-    animation: ringSpin 55s linear infinite;
 }
 
 .activation-orbit-outer {
@@ -952,7 +951,7 @@ button:focus-visible {
     }
 }
 
-@media (min-width: 1001px) and (max-height: 760px) {
+@media (min-width: 1101px) and (max-height: 760px) {
      :root {
         --header-height: 66px;
     }
@@ -984,13 +983,13 @@ button:focus-visible {
     }
 }
 
-@media (min-width: 1001px) and (max-width: 1400px) {
+@media (min-width: 1101px) and (max-width: 1400px) {
     .activation-statistics {
         grid-template-columns: .88fr .88fr 1.12fr 1.12fr;
     }
 }
 
-@media (min-width: 1001px) and (max-width: 1250px) {
+@media (min-width: 1101px) and (max-width: 1250px) {
     .activation-capability--display {
         left: 48%;
     }
@@ -1003,7 +1002,7 @@ button:focus-visible {
         top: 41%;
     }
     .activation-hero {
-        padding-inline: 32px;
+        --activation-gutter: clamp(36px, 4vw, 50px);
     }
     .activation-hero-copy h1 {
         font-size: 3.45vw;
@@ -1047,12 +1046,13 @@ button:focus-visible {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .activation-hero {
+        --activation-gutter: max(32px, calc((100% - 690px) / 2));
         height: auto;
         min-height: 0;
         grid-template-columns: 1fr;
-        padding: 36px 32px 28px;
+        padding: 36px var(--activation-gutter) 28px;
     }
     .activation-hero-copy {
         width: 100%;
@@ -1148,7 +1148,8 @@ button:focus-visible {
 
 @media (max-width: 600px) {
     .activation-hero {
-        padding: 28px 18px 24px;
+        --activation-gutter: 18px;
+        padding: 28px var(--activation-gutter) 24px;
     }
     .activation-hero-copy {
         gap: 22px;
@@ -1163,6 +1164,10 @@ button:focus-visible {
     }
     .activation-hero-copy h1 {
         font-size: clamp(28px, 7.65vw, 45px);
+    }
+    .activation-hero-copy h1 span,
+    .roles-heading h2 span {
+        white-space: normal;
     }
     .activation-hero-description {
         font-size: 12px;
@@ -1326,4 +1331,26 @@ button:focus-visible {
     height: 100vh;
     height: 100dvh;
     background: radial-gradient(ellipse at 77% 36%, #ffffffd9, transparent 46%), linear-gradient(180deg, #eef7ff 0%, #f7faff 43%, #c8e5ff 71%, #66b4ff 100%);
+}
+
+.staffing-view {
+    display: none;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    background: #f7f9fd;
+}
+
+.staffing-view-frame {
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    border: 0;
+}
+
+body.is-staffing-route> :not(.site-header):not(#staffing-view) {
+    display: none !important;
+}
+
+body.is-staffing-route>#staffing-view {
+    display: block;
 }

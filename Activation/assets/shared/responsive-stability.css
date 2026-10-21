@@ -1,0 +1,37 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    overflow-x: clip;
+}
+
+:where(h1, h2, h3, h4, p, a, button, label, li, th, td) {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+:where(main, section, article, aside, header, footer, nav, div) {
+    min-width: 0;
+}
+
+:where(img, video, canvas) {
+    display: block;
+    max-width: 100%;
+}
+
+:where(svg) {
+    max-width: 100%;
+}
+
+:where(button, input, select, textarea) {
+    max-width: 100%;
+}
+
+@supports not (overflow: clip) {
+    body {
+        overflow-x: hidden;
+    }
+}

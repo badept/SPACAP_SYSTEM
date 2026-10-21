@@ -729,7 +729,7 @@
       body = `<div class="app-home-image-wrapper"><img src="assets/${systems[activeSystem].assetFolder}/home.png" alt="Màn hình Trang chủ App" class="app-home-image" role="button" tabindex="0" aria-label="Phóng to: Màn hình Trang chủ App" aria-haspopup="dialog" data-action="enlarge-image" title="Nhấn để xem ảnh rõ hơn"></div>`;
     $('#phone-screen').innerHTML = screen.id === 'home'
       ? body
-      : phoneHeader(screen) + body + '<span class="app-demo-label">SPACAP SYSTEM · Bản trải nghiệm</span>';
+      : phoneHeader(screen) + body + '<span class="app-demo-label">ACACY ONE · Bản trải nghiệm</span>';
     $('#phone-screen').scrollTop = 0;
   }
 
